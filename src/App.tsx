@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import type { CSSProperties, FormEvent, KeyboardEvent } from 'react';
 import { motion, useMotionValueEvent, useReducedMotion, useScroll, useTransform } from 'motion/react';
 import { ArrowUpRight, ArrowDown, ArrowLeft, ArrowRight, Terminal as TerminalIcon, Github, Mail, X, Menu, Command, RotateCcw, Sparkles } from 'lucide-react';
-import { certificates, profile, projects, skills } from './data';
+import { certificates, profile, projects, skillCollections } from './data';
 import { commands, runCommand } from './terminal';
 
 const sections = ['Home','About','Skills','Projects','Certifications','Contact'];
@@ -87,21 +87,22 @@ function SkillDeck() {
   const touch=useRef<number|null>(null);
   const swiped=useRef(false);
   useEffect(()=>{const m=window.matchMedia('(max-width: 700px)');const update=()=>setMobile(m.matches);m.addEventListener('change',update);return()=>m.removeEventListener('change',update);},[]);
-  const cards=skills.slice(page*6,page*6+6);
+  const cards=skillCollections[page].cards;
+  const fanStep=5/Math.max(1,cards.length-1);
   function move(delta:number){setSelected(n=>(n+delta+cards.length)%cards.length);}
   function flip(name:string){setFlipped(f=>f.includes(name)?f.filter(n=>n!==name):[...f,name]);}
-  return <><div className="skills-toolbar"><div className="segmented" aria-label="Skill collection">{['Data & pipelines','Tools & cloud'].map((label,i)=><button aria-pressed={page===i} key={label} onClick={()=>{setPage(i);setSelected(0);setHover(null);}}>{label}</button>)}</div><span className="deck-hint"><RotateCcw size={14}/> {mobile?'Swipe to explore · Tap to flip':'Hover to discover · Click to flip'}</span></div>
+  return <><div className="skills-toolbar"><div className="segmented" aria-label="Skill collection">{skillCollections.map(({label},i)=><button aria-pressed={page===i} key={label} onClick={()=>{setPage(i);setSelected(0);setHover(null);}}>{label}</button>)}</div><span className="deck-hint"><RotateCcw size={14}/> {mobile?'Swipe to explore · Tap to flip':'Hover to discover · Click to flip'}</span></div>
     <div className="deck" onTouchStart={e=>{swiped.current=false;touch.current=e.touches[0].clientX;}} onTouchEnd={e=>{if(touch.current!==null){const diff=e.changedTouches[0].clientX-touch.current;if(Math.abs(diff)>40){swiped.current=true;move(diff<0?1:-1);}}touch.current=null;}}>
       <div className="deck-orbit" aria-hidden="true"/>
-      {cards.map((skill,i)=>{const offset=i-2.5;const active=hover===i;const isFlipped=flipped.includes(skill.name);const delta=i-selected;return <motion.button key={skill.name} className={`skill-card ${isFlipped?'is-flipped':''}`} style={{'--accent':skill.color,zIndex:active?30:mobile?10-Math.abs(delta):i+1} as CSSProperties}
+      {cards.map((skill,i)=>{const offset=(i-(cards.length-1)/2)*fanStep;const active=hover===i;const isFlipped=flipped.includes(skill.name);const delta=i-selected;return <motion.button key={skill.name} className={`skill-card ${isFlipped?'is-flipped':''}`} style={{'--accent':skill.color,zIndex:active?30:mobile?10-Math.abs(delta):i+1} as CSSProperties}
         animate={mobile?{x:delta*280,y:0,rotate:0,scale:delta===0?1:0.92,opacity:Math.abs(delta)>1?0:1}:{x:offset*142+(hover!==null&&!active?(i<hover?-28:28):0),y:active?-70:Math.abs(offset)*17,rotate:active?0:offset*8,scale:active?1.08:1,opacity:1}}
         transition={reduced?{duration:0}:{type:'spring',stiffness:190,damping:22}}
         onMouseEnter={()=>!mobile&&setHover(i)} onMouseLeave={()=>setHover(null)} onFocus={()=>!mobile&&setHover(i)} onBlur={()=>setHover(null)} onClick={()=>{if(swiped.current){swiped.current=false;return;}flip(skill.name);}}
         tabIndex={mobile&&delta!==0?-1:0} aria-hidden={mobile&&Math.abs(delta)>1?true:undefined} aria-label={`${skill.name}: ${skill.status}. ${isFlipped?'Show front':'Flip for details'}`} aria-pressed={isFlipped}>
-          <span className="card-flipper"><span className="card-face card-front" aria-hidden={isFlipped}><span className="card-top"><span>{String(page*6+i+1).padStart(2,'0')}</span><Sparkles size={15}/></span><span className="tech-art"><img src={`/logos/${skill.icon}.svg`} alt="" onError={e=>{e.currentTarget.style.display='none';}}/><span className="tech-symbol">{skill.symbol}</span></span><span className="card-category">{skill.category}</span><strong>{skill.name}</strong><span className="card-bottom"><span>{skill.status}</span><ArrowUpRight size={17}/></span></span>
+          <span className="card-flipper"><span className="card-face card-front" aria-hidden={isFlipped}><span className="card-top"><span>{String(i+1).padStart(2,'0')}</span><Sparkles size={15}/></span><span className="tech-art"><img src={`/logos/${skill.icon}.svg`} alt="" onError={e=>{e.currentTarget.style.display='none';}}/><span className="tech-symbol">{skill.symbol}</span></span><span className="card-category">{skill.category}</span><strong>{skill.name}</strong><span className="card-bottom"><span>{skill.status}</span><ArrowUpRight size={17}/></span></span>
           <span className="card-face card-back" aria-hidden={!isFlipped}><span className="card-category">{skill.category}</span><strong>{skill.name}</strong><span className="back-description">{skill.description}</span><span className="card-context">{skill.context}</span><span className="card-bottom"><span>{skill.status}</span><RotateCcw size={16}/></span></span></span>
         </motion.button>;})}
-    </div><div className="deck-controls"><button onClick={()=>move(-1)} aria-label="Previous skill"><ArrowLeft size={18}/></button><span>{String(selected+1).padStart(2,'0')} / 06</span><button onClick={()=>move(1)} aria-label="Next skill"><ArrowRight size={18}/></button></div>
+    </div><div className="deck-controls"><button onClick={()=>move(-1)} aria-label="Previous skill"><ArrowLeft size={18}/></button><span>{String(selected+1).padStart(2,'0')} / {String(cards.length).padStart(2,'0')}</span><button onClick={()=>move(1)} aria-label="Next skill"><ArrowRight size={18}/></button></div>
     <p className="skills-footnote">Built through projects. Still learning, always.<span>Hands-on ≠ mastery. Exploring means active experimentation.</span></p></>;
 }
 function CertificateGallery(){

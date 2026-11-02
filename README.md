@@ -27,7 +27,7 @@ npm run preview
 
 - **Terminal:** safe predefined registry for help, whoami, about, skills, projects, certifications, github, contact, clear, date, and neofetch. Arrow-key history, Tab completion, Ctrl+L clearing, and touch shortcuts. Terminal output uses text rendering rather than HTML injection. No shell execution.
 - **Computer reveal:** Motion scroll progress maps the native scroll position to CSS perspective, scale, rotation and reveal opacity. The page scrolls normally and reverses the animation when scrolling up. Skip intro is always available.
-- **Skill deck:** two groups of six cards; spring-driven fan layout, hover elevation, adjacent-card response, and actual CSS 180-degree flips. Mobile uses swipe navigation plus previous/next buttons and tap to flip.
+- **Skill deck:** six Data & Pipelines cards and nine Tools & Cloud cards, including SQL, Airflow and dbt in both relevant collections. Fan spacing adjusts to the collection size. Spring-driven hover elevation, adjacent-card response, and actual CSS 180-degree flips remain available. Mobile uses swipe navigation plus previous/next buttons and tap to flip.
 - **Projects:** short repository-linked editorial index. Learning projects, exploration and research reproductions are labeled honestly.
 - **Credentials:** four supplied original certificate images, lazy loaded. Native modal dialog supports Escape, arrows, close button, focus return and browser-managed focus containment.
 - **Accessibility:** semantic sections, alternative navigation, focus outlines, named controls and reduced-motion fallbacks. Manual assistive-technology verification remains required.
