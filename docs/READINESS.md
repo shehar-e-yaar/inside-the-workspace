@@ -15,6 +15,7 @@
 - Browser terminal input, history, autocomplete, desktop flip, certificate navigation/Escape close and mobile menu/next-card/flip checks passed.
 - No horizontal page overflow at the tested 1440 px desktop and 390 px mobile widths.
 - Browser checks found and fixes addressed reveal-opacity lag and focus-induced mobile carousel scrolling.
+- Intro caption overlap fixed: floating workspace labels removed and the transition headline moved after the sticky scene. Browser checks at 1440×900, 1366×650 and 390×844 confirmed separate caption flow; the short laptop layout also has clear navigation-to-monitor spacing.
 
 ## Outstanding gates
 

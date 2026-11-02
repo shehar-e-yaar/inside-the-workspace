@@ -57,25 +57,22 @@ function Intro() {
   function updateReveal(progress:number) {
     const clamp=(n:number)=>Math.max(0,Math.min(1,n));
     scene.current?.style.setProperty('--reveal-opacity',String(clamp((progress-.05)/.4)));
-    scene.current?.style.setProperty('--scene-label-opacity',String(1-clamp(progress/.25)));
-    scene.current?.style.setProperty('--end-opacity',String(clamp((progress-.55)/.35)));
+    scene.current?.style.setProperty('--intro-hint-opacity',String(1-clamp(progress/.25)));
   }
   useMotionValueEvent(scrollYProgress,'change',updateReveal);
   useEffect(()=>{updateReveal(scrollYProgress.get());},[scrollYProgress]);
-  return <section id="home" ref={scene} className={`intro-scene ${reduced?'reduced':''}`} aria-label="Interactive computer introduction">
+  return <><section id="home" ref={scene} className={`intro-scene ${reduced?'reduced':''}`} aria-label="Interactive computer introduction">
     <div className="intro-sticky">
       <div className="ambient ambient-cyan"/><div className="ambient ambient-purple"/>
-      <div className="scene-label"><span>01 / ENTER THE WORKSPACE</span><span>LAHORE, PK <span className="live-dot"/></span></div>
       <div className="perspective-stage"><motion.div className="computer" style={reduced?{}:{scale,rotateX,rotateY,y}}>
         <div className="monitor"><div className="webcam"/><Terminal/><div className="monitor-chin"><span>MS / WORKSPACE</span><span className="power-light"/></div></div>
         <div className="monitor-stand"/><div className="monitor-foot"/>
         <div className="keyboard" aria-hidden="true">{Array.from({length:56},(_,i)=><i key={i}/>)}</div>
       </motion.div></div>
-      <div className="beyond-screen"><span className="eyebrow">THERE'S A BUILDER BEHIND EVERY SYSTEM.</span><p>Let's go beyond<br/><span>the screen.</span></p></div>
       <div className="scroll-cue"><span className="scroll-line"/><span>Type help <b>·</b> Scroll to discover</span><ArrowDown size={15}/></div>
       <a className="skip-intro" href="#about">Skip intro <ArrowDown size={13}/></a>
     </div>
-  </section>;
+  </section><div className="intro-transition"><span className="eyebrow">THERE'S A BUILDER BEHIND EVERY SYSTEM.</span><p>Let's go beyond<br/><span>the screen.</span></p></div></>;
 }
 function SkillDeck() {
   const [page,setPage]=useState(0);

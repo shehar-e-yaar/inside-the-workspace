@@ -57,7 +57,7 @@ The reusable SkillCard component set includes Front, Hover, Selected, Back and M
 | Computer rotateX | 0 → 9 degrees |
 | Computer rotateY | 0 → -12 → -8 degrees |
 | Stand / keyboard | Opacity 0 → 1 at progress .05 → .45 |
-| Closing hero text | Opacity 0 → 1 at .55 → .9 |
+| Transition headline | Separate normal-flow block after the sticky computer scene; never overlays the monitor |
 | Desktop fan | Six cards, 142 px offset spacing, 8-degree angle steps |
 | Active card | Rise 70 px, scale 1.08, rotation 0 |
 | Neighbor response | Shift 28 px away from active card |
