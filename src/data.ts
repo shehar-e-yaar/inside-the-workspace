@@ -16,13 +16,9 @@ export const skills = [
   {name:'Azure',icon:'microsoftazure',symbol:'Az',category:'THE CLOUD',status:'Exploring',description:'Experimenting with cloud storage as part of orchestrated weather ingestion.',context:'Azure Blob · Airflow',color:'#abcdf5'},
   {name:'C++',icon:'cplusplus',symbol:'C++',category:'THE BUILDER',status:'Hands-on',description:'Practicing computer science fundamentals through application projects.',context:'Intelligent Text Editor',color:'#c6c0f1'},
 ];
-export const skillCollections = [
-  {label:'Data & pipelines',cards:skills.slice(0,6)},
-  {label:'Tools & cloud',cards:[...skills.slice(6),...skills.filter(skill=>['SQL','dbt','Airflow'].includes(skill.name))]},
-];
 const de = `${profile.github}/Data_Engineering_Projects/tree/main/`;
 export const projects = [
-  {name:'HeatShield',category:'GEOSPATIAL INTELLIGENCE',tags:'Python · Urban heat risk',url:`${profile.github}/HeatShield`,note:'Hackathon project'},
+  {name:'VenomLink',category:'GEOSPATIAL ACCESS & AI',tags:'AWS · Google Maps · On-device AI',url:`${profile.github}/venomlink`,note:'Hackathon prototype'},
   {name:'Real-Time Stock Pipeline',category:'STREAMING EXPERIMENT',tags:'Kafka · Spark',url:de+'Real_Time_Stock_Pipeline',note:'Learning project'},
   {name:'NYC Taxi ETL',category:'DATA ENGINEERING',tags:'Airflow · PostgreSQL · Docker',url:de+'NYC_Taxi_ETL',note:'Learning project'},
   {name:'E-Commerce Warehouse',category:'ANALYTICS ENGINEERING',tags:'dbt · Snowflake · SQL',url:de+'e_commerce_dbt',note:'Learning project'},
