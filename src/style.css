@@ -88,3 +88,6 @@
    then center between the actual lines, independent of section header spacing. */
 .about{padding-block:clamp(72px,8vw,110px)}
 .about>.section-glow,.skills-section>.section-glow{position:absolute;top:0;left:0;right:0;height:2px;margin:0}
+
+.toolkit-hint{text-align:center;font-size:13px;color:var(--muted);line-height:1.7;min-height:24px}
+@media(max-width:700px){.toolkit-hint{font-size:12px;max-width:280px;margin-inline:auto;min-height:42px}}
