@@ -1,6 +1,6 @@
 # Inside the Workspace
 
-Muhammad Sheheryar’s interactive portfolio: begin inside a working terminal, scroll out of a CSS 3D computer, and explore a deck of flipping technical skill cards.
+Muhammad Sheheryar’s interactive portfolio: begin inside a working terminal, scroll out of a CSS 3D computer, and assemble projects with collectible technology cards inside a compact interactive book.
 
 [Source repository](https://github.com/shehar-e-yaar/inside-the-workspace) · [Editable Figma design](https://www.figma.com/design/3zLiGlrMVFqsEELo6zw05g?node-id=6-900)
 
@@ -25,10 +25,10 @@ npm run preview
 
 ## The experience
 
-- **Terminal:** safe predefined registry for help, whoami, about, skills, projects, certifications, github, contact, clear, date, and neofetch. Arrow-key history, Tab completion, Ctrl+L clearing, and touch shortcuts. Terminal output uses text rendering rather than HTML injection. No shell execution.
+- **Terminal:** safe predefined registry for help, whoami, about, skills, projects, certifications, github, contact, clear, date, neofetch, inventory, and forge. Arrow-key history, Tab completion, Ctrl+L clearing, and touch shortcuts. Terminal output uses text rendering rather than HTML injection. No shell execution.
 - **Computer reveal:** Motion scroll progress maps the native scroll position to CSS perspective, scale, rotation and reveal opacity. The page scrolls normally and reverses the animation when scrolling up. Skip intro is always available.
-- **Skill deck:** six Data & Pipelines cards and nine Tools & Cloud cards, including SQL, Airflow and dbt in both relevant collections. Fan spacing adjusts to the collection size. Spring-driven hover elevation, adjacent-card response, and actual CSS 180-degree flips remain available. Mobile uses swipe navigation plus previous/next buttons and tap to flip.
-- **Projects:** short repository-linked editorial index. Learning projects, exploration and research reproductions are labeled honestly.
+- **Skills:** a compact twelve-technology strip keeps the Skills navigation useful. Project-specific skill cards live beside the book.
+- **Project Forge:** open the cover, pull the page corners to turn, and place upright technology cards into matching portrait slots. Shared inventory and the existing terminal support replenishment. Keyboard arrows and tap assignment are available.
 - **Credentials:** four supplied original certificate images, lazy loaded. Native modal dialog supports Escape, arrows, close button, focus return and browser-managed focus containment.
 - **Accessibility:** semantic sections, alternative navigation, focus outlines, named controls and reduced-motion fallbacks. Manual assistive-technology verification remains required.
 
@@ -43,6 +43,8 @@ React, TypeScript, Vite, Motion for React, CSS 3D transforms, Lucide icons, loca
 Architecture: visitor → Amplify Hosting HTTPS/CDN → static Vite output → browser-local terminal, scroll scene and skills deck. GitHub main branch → Amplify build → hosted static assets. This is the intended deployment architecture, not verified deployed infrastructure.
 
 ## Design and screenshots
+
+The linked Figma screens document the earlier portfolio/book design. The latest compact cover and cursor-turn revision is implemented locally; current behavior and browser screenshots are recorded in [Project Forge](docs/PROJECT-FORGE.md).
 
 [Editable Figma design](https://www.figma.com/design/3zLiGlrMVFqsEELo6zw05g?node-id=6-900) contains 1440 px desktop and 390 px mobile screens, five connected computer-reveal states, scoped design tokens, shared typography/effects, original logo components, five skill-card variants and the four original certificate artworks. [Design handoff](docs/DESIGN.md) records the specification and node links.
 
@@ -74,3 +76,11 @@ The user's mission brief supplies education and personal direction. Public repos
 - Certificates are supplied original personal credential assets.
 
 Submission draft and walkthrough: [docs/SUBMISSION.md](docs/SUBMISSION.md).
+
+## Project Forge
+
+The local interactive project flipbook connects the existing skill deck and terminal through one shared inventory. See [implementation, verified project sources, Figma states and acceptance checklist](docs/PROJECT-FORGE.md). This local feature has not been pushed or deployed.
+
+## Build to Reveal revision
+
+The original twelve-card click-through/fan has been restored. Those same card elements now dock beside a compact mystery-project book on scroll. See [current implementation and verification](docs/BUILD-TO-REVEAL.md); earlier Project Forge documents describe superseded iterations.

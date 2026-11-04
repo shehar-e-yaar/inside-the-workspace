@@ -15,7 +15,7 @@ export const skills = [
   {name:'AWS',icon:'amazonwebservices',symbol:'aws',category:'THE CLOUD',status:'Learning',description:'Exploring cloud services and preparing this portfolio for Amplify Hosting.',context:'Cloud hosting · agent experiments',color:'#f2cc84'},
   {name:'Azure',icon:'microsoftazure',symbol:'Az',category:'THE CLOUD',status:'Exploring',description:'Experimenting with cloud storage as part of orchestrated weather ingestion.',context:'Azure Blob · Airflow',color:'#abcdf5'},
   {name:'C++',icon:'cplusplus',symbol:'C++',category:'THE BUILDER',status:'Hands-on',description:'Practicing computer science fundamentals through application projects.',context:'Intelligent Text Editor',color:'#c6c0f1'},
-];
+] as const;
 const de = `${profile.github}/Data_Engineering_Projects/tree/main/`;
 export const projects = [
   {name:'VenomLink',category:'GEOSPATIAL ACCESS & AI',tags:'AWS · Google Maps · On-device AI',url:`${profile.github}/venomlink`,note:'Hackathon prototype'},

@@ -1,7 +1,8 @@
 import { certificates, profile, projects, skills } from './data';
-export const commands = ['help','whoami','about','skills','projects','certifications','github','contact','clear','date','neofetch'] as const;
-export function runCommand(raw:string, now = new Date()): string {
+export const commands = ['help','whoami','about','skills','projects','certifications','github','contact','clear','date','neofetch','inventory','forge'] as const;
+export function runCommand(raw:string, now = new Date(), forge?:{execute:(raw:string)=>string}): string {
   const command = raw.trim().toLowerCase();
+  if(['inventory','forge'].includes(command.split(/\s+/)[0]))return forge?forge.execute(raw):'Project Forge: use the interactive portfolio terminal.\nCommands: inventory · forge <skill> <quantity>';
   const registry: Record<string,()=>string> = {
     help:()=>`Available commands\n${commands.join('  ·  ')}\n\n↑ / ↓ history · Tab autocomplete · Ctrl+L clear\nOr scroll and use the navigation. You can explore without commands.`,
     whoami:()=>`${profile.name}\nBS Computer Science · UVAS Lahore, Pakistan\nData Engineer in the making.`,

@@ -1,0 +1,70 @@
+{
+  "fileKey": "3zLiGlrMVFqsEELo6zw05g",
+  "sessionId": "d757afd0-f46a-482e-9382-c6dbd7e65fca",
+  "screens": [
+    {
+      "id": "29:568",
+      "name": "Build to Reveal / Stacked discovery"
+    },
+    {
+      "id": "29:619",
+      "name": "Build to Reveal / One-by-one reveal"
+    },
+    {
+      "id": "29:670",
+      "name": "Build to Reveal / Expanded fan"
+    },
+    {
+      "id": "29:721",
+      "name": "Build to Reveal / Inventory badges"
+    },
+    {
+      "id": "29:772",
+      "name": "Build to Reveal / Scroll 25%"
+    },
+    {
+      "id": "29:823",
+      "name": "Build to Reveal / Scroll 60%"
+    },
+    {
+      "id": "29:874",
+      "name": "Build to Reveal / Docked inventory + book"
+    },
+    {
+      "id": "29:929",
+      "name": "Build to Reveal / Closed cover"
+    },
+    {
+      "id": "29:984",
+      "name": "Build to Reveal / Cover opening"
+    },
+    {
+      "id": "29:1039",
+      "name": "Build to Reveal / Mystery page"
+    },
+    {
+      "id": "29:1101",
+      "name": "Build to Reveal / Portrait role slots"
+    },
+    {
+      "id": "29:1163",
+      "name": "Build to Reveal / Selected + dragged card"
+    },
+    {
+      "id": "29:1225",
+      "name": "Build to Reveal / Filled slots"
+    },
+    {
+      "id": "29:1287",
+      "name": "Build to Reveal / Project unlocked"
+    },
+    {
+      "id": "29:1350",
+      "name": "Build to Reveal / Terminal replenish + return"
+    },
+    {
+      "id": "29:1405",
+      "name": "Build to Reveal / Mobile inventory + book"
+    }
+  ]
+}
