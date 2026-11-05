@@ -1,6 +1,5 @@
 .visual {
   --hf-scale: 1;
-  --hf-background: #0a0b0f;
   --hf-accent: #4fd1ff;
   --hf-muted: #7b8196;
   position: relative;
@@ -10,7 +9,7 @@
   max-width: 640px;
   aspect-ratio: 640 / 520;
   margin-block: 24px;
-  background: var(--hf-background);
+  background: transparent;
   border-radius: 12px;
   contain: layout paint;
 }
@@ -24,10 +23,16 @@
    exports. Animate their wrappers, preserving the original SVG geometry. */
 .animatedSvg svg > g { opacity: 1; filter: none; }
 .canvas [data-figma-id] { box-sizing: border-box; }
+.canvas [data-figma-id='71:5718'] { opacity:var(--hf-pipeline-opacity,0) !important; }
+.canvas [data-figma-id='71:5396'] { opacity:var(--hf-timeline-opacity,1) !important; }
+.canvas .node { opacity:1 !important; }
 .background { position: absolute; inset: 0; pointer-events: none; transition: translate 180ms ease-out; }
-.caption { position: absolute; left: 252px; top: 425px; color: var(--hf-muted); font: 11px/1.4 'JetBrains Mono', monospace; }
-.edge { position: absolute; inset: 0; pointer-events: none; background: radial-gradient(ellipse at center, transparent 67%, var(--hf-background) 100%); }
-.canvas .node { padding: 0; text-align: left; cursor: help; transform-origin: center; pointer-events: auto; }
+.caption { position: absolute; left: 0; width:640px; text-align:center; top: 425px; color: var(--hf-muted); font: 13px/1.4 'JetBrains Mono', monospace; }
+.connections { position:absolute; inset:0; width:640px; height:520px; overflow:visible; pointer-events:none; }
+.linkBase { fill:none; stroke:#7b8196; stroke-opacity:.25; stroke-width:1.2; }
+.linkActive { fill:none; stroke:var(--hf-accent); stroke-width:1.6; stroke-dasharray:1; stroke-dashoffset:1; }
+.flowDot { fill:var(--hf-accent); }
+.canvas .node { padding: 0; text-align: left; cursor: pointer; transform-origin: center; pointer-events: auto; }
 .node > * { pointer-events: none; }
 .node:focus-visible { outline: 2px solid var(--hf-accent); outline-offset: 5px; }
 .node::after { content: attr(data-identity); position: absolute; bottom: calc(100% + 10px); left: 50%; transform: translateX(-50%); padding: 6px 10px; border-radius: 6px; background: #11131a; color: #f5f6f8; border: 1px solid #4fd1ff40; font: 12px/1.4 'JetBrains Mono', monospace; white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity 120ms; }
@@ -38,7 +43,6 @@
 .visual[data-static='true'] [data-figma-id='71:4713'] { opacity: 0 !important; }
 .srOnly { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 @media (max-width: 700px) {
-  .visual { aspect-ratio: 390 / 520; max-width: 390px; margin-inline: auto; }
-  .canvas { width: 390px; }
+  .visual { aspect-ratio: 640 / 520; max-width: 640px; margin-inline: auto; }
 }
 @media (prefers-reduced-motion: reduce) { .background, .node::after { transition: none; } }

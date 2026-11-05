@@ -4,7 +4,7 @@ import { animate } from 'motion/react';
 import type { AnimationPlaybackControls, DOMKeyframesDefinition, AnimationOptions } from 'motion/react';
 import design from './heroFlowDesign.json';
 import animatedSvg from './heroFlowSvg.json';
-import { heroCanPlay, heroParallax, heroSceneAt } from './heroFlowTimeline';
+import { HERO_LOOP_SECONDS, HERO_LINKS, heroSceneOpacity, heroHoldTrack, heroFlowAt, heroCurvePoint, heroClipMorph, heroCanPlay, heroParallax, heroSceneAt } from './heroFlowTimeline';
 import styles from './HeroFlowVisual.module.css';
 
 type Layer = { tag: string; id?: string; name?: string; src?: string; style: CSSProperties; children: (Layer | string)[] };
@@ -15,11 +15,16 @@ const nodeNames = ['Kafka', 'PySpark', 'Airflow', 'PostgreSQL', 'Snowflake'];
 // under docs/hero-animation. The renderer does not infer technology or layout.
 function renderLayer(layer: Layer | string, key: string): React.ReactNode {
   if (typeof layer === 'string') return layer;
+  if (['71:5739', '71:5745', '71:6155'].includes(layer.id ?? '')) return null;
+  if (layer.id === '71:5719') return <svg key={key} className={styles.connections} viewBox="0 0 640 520" aria-hidden="true">
+    {HERO_LINKS.map((c,i)=><g key={i}><path d={`M${c[0]} ${c[1]}C${c.slice(2).join(' ')}`} className={styles.linkBase}/><path data-flow-link={i} pathLength="1" d={`M${c[0]} ${c[1]}C${c.slice(2).join(' ')}`} className={styles.linkActive}/></g>)}
+    <circle data-flow-dot r="3" className={styles.flowDot} opacity="0"/>
+  </svg>;
   const svg = layer.src && (animatedSvg as Record<string, string>)[layer.src];
   if (svg) return <span key={key} className={styles.animatedSvg} style={layer.style} aria-hidden="true" data-asset={layer.src} dangerouslySetInnerHTML={{ __html: svg }}/>;
   const identity = layer.name?.startsWith('Node / ') ? layer.name.slice(7) : undefined;
   const props = {
-    key, style: identity ? { ...layer.style, overflow: 'visible' } : layer.style, 'data-figma-id': layer.id,
+    key, style: identity ? { ...layer.style, overflow: 'visible' } : layer.style, 'data-figma-id': layer.id, 'data-layer-name': layer.name,
     ...(layer.id === '71:5745' || layer.id === '71:6155' ? { title: 'Illustrative events per second — not live telemetry' } : {}),
     ...(identity ? { className: styles.node, type: 'button' as const, 'data-identity': identity, 'aria-label': identity, title: identity } : {}),
     ...(layer.src ? { src: layer.src, alt: '', draggable: false } : {}),
@@ -36,7 +41,7 @@ export default function HeroFlowVisual() {
   const flags = useRef({ manual: false, interacting: false, visible: false, hidden: document.hidden, static: false });
   const [compact, setCompact] = useState(() => matchMedia('(max-width: 700px)').matches);
   const [reduced, setReduced] = useState(() => matchMedia('(prefers-reduced-motion: reduce)').matches);
-  const staticScene = compact || reduced;
+  const staticScene = reduced;
   const sync = () => { animations.current.forEach(control => heroCanPlay(flags.current) ? control.play() : control.pause()); schedule.current(); };
 
   useLayoutEffect(() => {
@@ -45,7 +50,7 @@ export default function HeroFlowVisual() {
     const motion = matchMedia('(prefers-reduced-motion: reduce)');
     const resize = () => {
       setCompact(mobile.matches); setReduced(motion.matches);
-      host.style.setProperty('--hf-scale', String(host.clientWidth / (mobile.matches ? 390 : 640)));
+      host.style.setProperty('--hf-scale', String(host.clientWidth / 640));
     };
     resize();
     const observer = new ResizeObserver(resize); observer.observe(host);
@@ -65,7 +70,7 @@ export default function HeroFlowVisual() {
     }
     const controls: AnimationPlaybackControls[] = [];
     for (const [id, track] of Object.entries(design.tracks)) {
-      if (id === '71:5745') continue; // Keep the requested illustrative counter readable while its number changes.
+      if (id === '71:5745' || id === '71:5396' || /^Clip /.test(host.querySelector<HTMLElement>(`[data-figma-id="${id}"]`)?.dataset.layerName ?? '')) continue;
       const element = host.querySelector<HTMLElement>(`[data-figma-id="${id}"]`);
       if (!element) continue;
       // JSON cannot represent Infinity. Restore the exported infinite repeat here.
@@ -73,8 +78,19 @@ export default function HeroFlowVisual() {
       // Clear ruler/track furniture before clips detach upward, then restore it
       // after the clips settle. This prevents clips crossing visible ruler lines.
       const options = Object.fromEntries(Object.entries(track.options).map(([property, value]) => [property, { ...value, repeat: Infinity }]));
-      const values = timelineFurniture ? { opacity: [1, 1, 0, 0, 1, 1] } : track.values;
-      if (timelineFurniture) Object.assign(options, { opacity: { duration: 12, times: [0, .25, .275, .94, .99, 1], ease: 'easeInOut', repeat: Infinity } });
+      const values: Record<string, number[]> = timelineFurniture ? { opacity: [1, 1, 0, 0, 1, 1] } : { ...track.values };
+      if (element.dataset.identity) {
+        // Remove the unrelated exported pulses: the shared flow clock below
+        // owns the lift, and the original node fade remains intact.
+        values.scaleX = values.scaleY = [.86, .86, 1, 1, .86];
+        Object.assign(options, { scaleX: { duration:12, times:[0,.25,.5,.75,1], repeat:Infinity }, scaleY: { duration:12, times:[0,.25,.5,.75,1], repeat:Infinity } });
+      }
+      for(const property of Object.keys(values)){
+        const option=options[property as keyof typeof options];
+        const held=heroHoldTrack(values[property],option.times);
+        values[property]=held.values;
+        Object.assign(option,{duration:HERO_LOOP_SECONDS,times:held.times});
+      }
       const control = animate(element, values as DOMKeyframesDefinition, options as AnimationOptions);
       control.pause(); control.time = 0; controls.push(control);
     }
@@ -83,26 +99,44 @@ export default function HeroFlowVisual() {
     const visibility = () => { flags.current.hidden = document.hidden; sync(); };
     const observer = new IntersectionObserver(([entry]) => { flags.current.visible = entry.isIntersecting; sync(); }, { threshold: .05 });
     observer.observe(host); document.addEventListener('visibilitychange', visibility);
-    let frame = 0, lastCounter = '', lastBucket = -1;
+    let frame = 0;
+    const nodes = nodeNames.map(name=>host.querySelector<HTMLElement>(`[data-identity="${name}"]`));
+    const links = [...host.querySelectorAll<SVGPathElement>('[data-flow-link]')];
+    const dot = host.querySelector<SVGCircleElement>('[data-flow-dot]');
+    const clips = [...host.querySelectorAll<HTMLElement>('[data-layer-name^="Clip "]')].map(element=>({element,left:parseFloat(element.style.left),top:parseFloat(element.style.top),width:parseFloat(element.style.width),background:element.style.background}));
+    const furniture = [...host.querySelectorAll<HTMLElement>('[data-figma-id="71:5396"] > [data-figma-id]')].filter(element=>!element.dataset.layerName?.startsWith('Clip '));
     const update = () => {
       frame = 0;
-      const seconds = (controls[0]?.time ?? 0) % 12;
+      const seconds = (controls[0]?.time ?? 0) % HERO_LOOP_SECONDS;
+      // One explicit scene envelope prevents nested exported opacity tracks
+      // from dimming individual nodes before the shared return begins.
+      const opacity=heroSceneOpacity(seconds);
+      host.style.setProperty('--hf-pipeline-opacity',String(opacity.pipeline));
+      host.style.setProperty('--hf-timeline-opacity',String(opacity.timeline));
+      furniture.forEach(element=>element.style.setProperty('opacity',String(opacity.furniture),'important'));
+      clips.forEach(({element,left,top,width,background:clipBackground},i)=>{
+        const morph=heroClipMorph(seconds,i,left,top,width);
+        element.style.transformOrigin='top left';
+        element.style.transform=`translate(${morph.x}px,${morph.y}px) scale(${morph.sx},${morph.sy})`;
+        element.style.opacity=String(morph.opacity);
+        element.style.borderRadius=`${5+11*morph.shape}px`;
+        element.style.background=`color-mix(in srgb, ${clipBackground} ${100*(1-morph.shape)}%, #11131a)`;
+        for(const child of element.children)(child as HTMLElement).style.opacity=String(1-morph.shape);
+      });
       host.dataset.playing = String(heroCanPlay(flags.current));
       host.dataset.phase = seconds.toFixed(2);
       const scene = heroSceneAt(seconds);
+      const flow = heroFlowAt(seconds);
+      nodes.forEach((node,i)=>{if(node)node.style.translate=`0px ${scene==='pipeline'&&i===flow.index?flow.lift:0}px`;});
+      links.forEach((link,i)=>{link.style.strokeDashoffset=String(scene==='pipeline'?(i<flow.index?0:i===flow.index?1-flow.travel:1):1);});
+      if(dot){
+        dot.setAttribute('opacity',scene==='pipeline'&&flow.travelling?'1':'0');
+        const point=heroCurvePoint(HERO_LINKS[Math.min(flow.index,3)],flow.travel);
+        dot.setAttribute('cx',String(point[0]));dot.setAttribute('cy',String(point[1]));
+      }
       if (host.dataset.scene !== scene) {
         host.dataset.scene = scene;
         host.querySelectorAll<HTMLButtonElement>('[data-identity]').forEach(button => { button.disabled = scene !== 'pipeline'; });
-      }
-      const bucket = Math.floor(seconds * 10);
-      if (scene === 'pipeline' && bucket !== lastBucket) {
-        lastBucket = bucket;
-        const count = `events/sec ${Math.round(12000 + (seconds - 6) / 3 * 480).toLocaleString('en-US')}`;
-        if (count !== lastCounter) {
-          const counter = host.querySelector('[data-figma-id="71:5745"]');
-          if (counter) counter.textContent = count;
-          lastCounter = count;
-        }
       }
       if(heroCanPlay(flags.current))frame = requestAnimationFrame(update);
     };
@@ -115,13 +149,12 @@ export default function HeroFlowVisual() {
     };
   }, [staticScene]);
 
-  const visual = useMemo(() => compact ? renderLayer(scenes.mobile, 'mobile') : <>
+  const visual = useMemo(() => <>
     <div ref={background} className={styles.background} aria-hidden="true"></div>
     {!reduced && renderLayer(scenes.timeline, 'timeline')}
     {renderLayer(scenes.pipeline, 'pipeline')}
-    <span className={styles.caption}>edit → engineer</span>
-    <div className={styles.edge} aria-hidden="true"/>
-  </>, [compact, reduced]);
+    <span className={styles.caption}>Video Editor to Data Engineer</span>
+  </>, [reduced]);
 
   function interact(target: EventTarget | null) {
     const button = target instanceof Element ? target.closest('[data-identity]') : null;
@@ -139,6 +172,6 @@ export default function HeroFlowVisual() {
     onPointerLeave={() => { if(background.current)background.current.style.translate='0px 0px'; flags.current.interacting = root.current?.querySelector('[data-identity]:focus') !== null; sync(); }}
     onFocusCapture={event => interact(event.target)} onBlurCapture={event => interact(event.relatedTarget)}>
     <div className={styles.canvas}>{visual}</div>
-    <span className={styles.srOnly}>Illustrative pipeline: {nodeNames.join(' → ')}. The event counter is a design demonstration, not live telemetry.</span>
+    <span className={styles.srOnly}>Illustrative pipeline: {nodeNames.join(' → ')}.</span>
   </div>;
 }
