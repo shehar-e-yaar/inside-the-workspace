@@ -1,0 +1,8 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="640" height="520" viewBox="0 0 640 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Connections">
+<path id="Connection" d="M488 254C500 254 500 287 512 287" stroke="#7B8196" stroke-opacity="0.2"/>
+<path id="Connection_2" d="M368 231C380 231 380 254 392 254" stroke="#7B8196" stroke-opacity="0.2"/>
+<path id="Connection_3" d="M248 254C260 254 260 231 272 231" stroke="#7B8196" stroke-opacity="0.2"/>
+<path id="Connection_4" d="M128 287C140 287 140 254 152 254" stroke="#7B8196" stroke-opacity="0.2"/>
+</g>
+</svg>

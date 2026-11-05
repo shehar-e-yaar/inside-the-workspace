@@ -165,3 +165,6 @@
 @media(max-width:700px){.project-pipeline{margin:10px 0 12px}.project-pipeline>span{font-size:9px;right:8px}.pipeline-dialog{width:96vw;max-width:96vw}.pipeline-dialog header{padding:8px 10px}}
 @media(prefers-reduced-motion:reduce){.forge-journey-sticky{position:sticky}.forge-journey.journey-expanded{height:170svh;min-height:1100px}}
 @media(prefers-reduced-motion:reduce) and (max-width:700px){.forge-journey.journey-expanded{height:190svh;min-height:1440px}}
+
+/* Keep the desktop card dock and book together as one centered group. */
+@media(min-width:701px){.journey-book{right:max(0px,calc((100% - 945px)/2))}}

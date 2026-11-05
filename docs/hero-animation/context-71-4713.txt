@@ -1,0 +1,543 @@
+const assetPathPrefix = "https://www.figma.com/api/mcp/asset/e894daad-1b90-45f5-af7d-f7ab3d264044";
+import { motion } from "motion/react";
+const imgDot120 = `${assetPathPrefix}/01e04.svg`;
+const imgDot119 = `${assetPathPrefix}/9cced.svg`;
+const imgDot118 = `${assetPathPrefix}/1f48c.svg`;
+const imgDot117 = `${assetPathPrefix}/f1c31.svg`;
+const imgDot116 = `${assetPathPrefix}/83d0d.svg`;
+const imgDot115 = `${assetPathPrefix}/bfe0c.svg`;
+const imgDot114 = `${assetPathPrefix}/81d0d.svg`;
+const imgDot113 = `${assetPathPrefix}/2d881.svg`;
+const imgDot112 = `${assetPathPrefix}/3dc48.svg`;
+const imgDot111 = `${assetPathPrefix}/90eff.svg`;
+const imgDot110 = `${assetPathPrefix}/d6538.svg`;
+const imgDot109 = `${assetPathPrefix}/2128d.svg`;
+const imgDot108 = `${assetPathPrefix}/a2810.svg`;
+const imgDot107 = `${assetPathPrefix}/4baee.svg`;
+const imgDot106 = `${assetPathPrefix}/b87b8.svg`;
+const imgDot105 = `${assetPathPrefix}/2049f.svg`;
+const imgDot104 = `${assetPathPrefix}/e3c56.svg`;
+const imgDot103 = `${assetPathPrefix}/9bae5.svg`;
+const imgDot102 = `${assetPathPrefix}/dc1cb.svg`;
+const imgDot101 = `${assetPathPrefix}/b2ac2.svg`;
+const imgDot100 = `${assetPathPrefix}/80c4a.svg`;
+const imgDot99 = `${assetPathPrefix}/752cf.svg`;
+const imgDot98 = `${assetPathPrefix}/d9d45.svg`;
+const imgDot97 = `${assetPathPrefix}/8360f.svg`;
+const imgDot96 = `${assetPathPrefix}/a0059.svg`;
+const imgDot95 = `${assetPathPrefix}/39974.svg`;
+const imgDot94 = `${assetPathPrefix}/8da0e.svg`;
+const imgDot93 = `${assetPathPrefix}/feb61.svg`;
+const imgDot92 = `${assetPathPrefix}/0da61.svg`;
+const imgDot91 = `${assetPathPrefix}/0085e.svg`;
+const imgDot90 = `${assetPathPrefix}/bc127.svg`;
+const imgDot89 = `${assetPathPrefix}/8791a.svg`;
+const imgDot88 = `${assetPathPrefix}/d39be.svg`;
+const imgDot87 = `${assetPathPrefix}/1edcd.svg`;
+const imgDot86 = `${assetPathPrefix}/ff2c8.svg`;
+const imgDot85 = `${assetPathPrefix}/0fd41.svg`;
+const imgDot84 = `${assetPathPrefix}/ad69d.svg`;
+const imgDot83 = `${assetPathPrefix}/bafda.svg`;
+const imgDot82 = `${assetPathPrefix}/98cbd.svg`;
+const imgDot81 = `${assetPathPrefix}/25e2b.svg`;
+const imgDot80 = `${assetPathPrefix}/1877e.svg`;
+const imgDot79 = `${assetPathPrefix}/5e218.svg`;
+const imgDot78 = `${assetPathPrefix}/5da19.svg`;
+const imgDot77 = `${assetPathPrefix}/1b375.svg`;
+const imgDot76 = `${assetPathPrefix}/acae4.svg`;
+const imgDot75 = `${assetPathPrefix}/e9dd9.svg`;
+const imgDot74 = `${assetPathPrefix}/63a9c.svg`;
+const imgDot73 = `${assetPathPrefix}/3240e.svg`;
+const imgDot72 = `${assetPathPrefix}/34d67.svg`;
+const imgDot71 = `${assetPathPrefix}/ec05f.svg`;
+const imgDot70 = `${assetPathPrefix}/8109a.svg`;
+const imgDot69 = `${assetPathPrefix}/a0892.svg`;
+const imgDot68 = `${assetPathPrefix}/d8cec.svg`;
+const imgDot67 = `${assetPathPrefix}/c1e3b.svg`;
+const imgDot66 = `${assetPathPrefix}/206fa.svg`;
+const imgDot65 = `${assetPathPrefix}/2e110.svg`;
+const imgDot64 = `${assetPathPrefix}/d7f3c.svg`;
+const imgDot63 = `${assetPathPrefix}/4e387.svg`;
+const imgDot62 = `${assetPathPrefix}/936e1.svg`;
+const imgDot61 = `${assetPathPrefix}/fb02b.svg`;
+const imgDot60 = `${assetPathPrefix}/5deb0.svg`;
+const imgDot59 = `${assetPathPrefix}/b7d1d.svg`;
+const imgDot58 = `${assetPathPrefix}/a178d.svg`;
+const imgDot57 = `${assetPathPrefix}/71119.svg`;
+const imgDot56 = `${assetPathPrefix}/8f2fd.svg`;
+const imgDot55 = `${assetPathPrefix}/b3bbe.svg`;
+const imgDot54 = `${assetPathPrefix}/84d88.svg`;
+const imgDot53 = `${assetPathPrefix}/3d7ee.svg`;
+const imgDot52 = `${assetPathPrefix}/e6b98.svg`;
+const imgDot51 = `${assetPathPrefix}/e971e.svg`;
+const imgDot50 = `${assetPathPrefix}/c2eba.svg`;
+const imgDot49 = `${assetPathPrefix}/a716c.svg`;
+const imgDot48 = `${assetPathPrefix}/c96d0.svg`;
+const imgDot47 = `${assetPathPrefix}/0aeef.svg`;
+const imgDot46 = `${assetPathPrefix}/604da.svg`;
+const imgDot45 = `${assetPathPrefix}/12344.svg`;
+const imgDot44 = `${assetPathPrefix}/fc2d6.svg`;
+const imgDot43 = `${assetPathPrefix}/b8626.svg`;
+const imgDot42 = `${assetPathPrefix}/9f0de.svg`;
+const imgDot41 = `${assetPathPrefix}/9253b.svg`;
+const imgDot40 = `${assetPathPrefix}/a1639.svg`;
+const imgDot39 = `${assetPathPrefix}/431b8.svg`;
+const imgDot38 = `${assetPathPrefix}/1b501.svg`;
+const imgDot37 = `${assetPathPrefix}/f9251.svg`;
+const imgDot36 = `${assetPathPrefix}/4a333.svg`;
+const imgDot35 = `${assetPathPrefix}/f8fc1.svg`;
+const imgDot34 = `${assetPathPrefix}/afd4f.svg`;
+const imgDot33 = `${assetPathPrefix}/af173.svg`;
+const imgDot32 = `${assetPathPrefix}/0cddf.svg`;
+const imgDot31 = `${assetPathPrefix}/50df7.svg`;
+const imgDot30 = `${assetPathPrefix}/bdf74.svg`;
+const imgDot29 = `${assetPathPrefix}/c91b6.svg`;
+const imgDot28 = `${assetPathPrefix}/e424c.svg`;
+const imgDot27 = `${assetPathPrefix}/e1ecd.svg`;
+const imgDot26 = `${assetPathPrefix}/ae3b9.svg`;
+const imgDot25 = `${assetPathPrefix}/85c5f.svg`;
+const imgDot24 = `${assetPathPrefix}/43faf.svg`;
+const imgDot23 = `${assetPathPrefix}/954e1.svg`;
+const imgDot22 = `${assetPathPrefix}/7010b.svg`;
+const imgDot21 = `${assetPathPrefix}/dd9f3.svg`;
+const imgDot20 = `${assetPathPrefix}/9600c.svg`;
+const imgDot19 = `${assetPathPrefix}/67f3f.svg`;
+const imgDot18 = `${assetPathPrefix}/e852f.svg`;
+const imgDot17 = `${assetPathPrefix}/72ec6.svg`;
+const imgDot16 = `${assetPathPrefix}/f0e2a.svg`;
+const imgDot15 = `${assetPathPrefix}/66e4e.svg`;
+const imgDot14 = `${assetPathPrefix}/38eda.svg`;
+const imgDot13 = `${assetPathPrefix}/4a76a.svg`;
+const imgDot12 = `${assetPathPrefix}/4bf68.svg`;
+const imgDot11 = `${assetPathPrefix}/4cb9f.svg`;
+const imgDot10 = `${assetPathPrefix}/01e1c.svg`;
+const imgDot9 = `${assetPathPrefix}/ccde8.svg`;
+const imgDot8 = `${assetPathPrefix}/a6132.svg`;
+const imgDot7 = `${assetPathPrefix}/f0530.svg`;
+const imgDot6 = `${assetPathPrefix}/14811.svg`;
+const imgDot5 = `${assetPathPrefix}/ba9ed.svg`;
+const imgDot4 = `${assetPathPrefix}/3dffa.svg`;
+const imgDot3 = `${assetPathPrefix}/38f16.svg`;
+const imgDot2 = `${assetPathPrefix}/4ce14.svg`;
+const imgDot1 = `${assetPathPrefix}/77ed0.svg`;
+const imgCyanGridPulse120 = `${assetPathPrefix}/01536.svg`;
+const imgCyanGridPulse110 = `${assetPathPrefix}/ebd5b.svg`;
+const imgCyanGridPulse100 = `${assetPathPrefix}/3bf62.svg`;
+const imgCyanGridPulse90 = `${assetPathPrefix}/ba701.svg`;
+const imgCyanGridPulse80 = `${assetPathPrefix}/fc30b.svg`;
+const imgCyanGridPulse70 = `${assetPathPrefix}/e0659.svg`;
+const imgCyanGridPulse60 = `${assetPathPrefix}/effb5.svg`;
+const imgCyanGridPulse50 = `${assetPathPrefix}/2ef31.svg`;
+const imgCyanGridPulse40 = `${assetPathPrefix}/38c4c.svg`;
+const imgCyanGridPulse30 = `${assetPathPrefix}/30208.svg`;
+const imgCyanGridPulse20 = `${assetPathPrefix}/3f1a6.svg`;
+const imgCyanGridPulse10 = `${assetPathPrefix}/43977.svg`;
+const imgGridLines = `${assetPathPrefix}/1885a.svg`;
+
+export default function DotField() {
+  return (
+    <div className="relative size-full" data-node-id="71:4713" data-name="Dot field">
+      <div className="absolute h-[520px] left-0 opacity-25 overflow-clip top-0 w-[640px]" data-node-id="71:4933" data-name="Dots">
+        <motion.div className="absolute left-[590.85px] size-[3px] top-[471.33px]" data-node-id="71:5053" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 120">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot120} />
+        </motion.div>
+        <motion.div className="absolute left-[541.72px] size-[3px] top-[443.05px]" data-node-id="71:5052" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 119">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot119} />
+        </motion.div>
+        <motion.div className="absolute left-[492.55px] size-[5px] top-[470.03px]" data-node-id="71:5051" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 118">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot118} />
+        </motion.div>
+        <motion.div className="absolute left-[443.34px] size-[3px] top-[452.54px]" data-node-id="71:5050" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 117">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot117} />
+        </motion.div>
+        <motion.div className="absolute left-[394.12px] size-[3px] top-[455.23px]" data-node-id="71:5049" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 116">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot116} />
+        </motion.div>
+        <motion.div className="absolute left-[344.87px] size-[3px] top-[468.16px]" data-node-id="71:5048" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 115">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot115} />
+        </motion.div>
+        <motion.div className="absolute left-[295.63px] size-[3px] top-[443.54px]" data-node-id="71:5047" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 114">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot114} />
+        </motion.div>
+        <motion.div className="absolute left-[246.38px] size-[3px] top-[472.37px]" data-node-id="71:5046" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 113">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot113} />
+        </motion.div>
+        <motion.div className="absolute left-[197.15px] size-[3px] top-[448.08px]" data-node-id="71:5045" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 112">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot112} />
+        </motion.div>
+        <motion.div className="absolute left-[147.94px] size-[3px] top-[460.45px]" data-node-id="71:5044" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 111">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot111} />
+        </motion.div>
+        <motion.div className="absolute left-[98.75px] size-[3px] top-[463.77px]" data-node-id="71:5043" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 110">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot110} />
+        </motion.div>
+        <motion.div className="absolute left-[49.6px] size-[5px] top-[445.77px]" data-node-id="71:5042" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 109">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot109} />
+        </motion.div>
+        <motion.div className="absolute left-[576.5px] size-[3px] top-[428.97px]" data-node-id="71:5041" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 108">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot108} />
+        </motion.div>
+        <motion.div className="absolute left-[527.44px] size-[3px] top-[400.83px]" data-node-id="71:5040" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 107">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot107} />
+        </motion.div>
+        <motion.div className="absolute left-[478.45px] size-[3px] top-[421.37px]" data-node-id="71:5039" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 106">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot106} />
+        </motion.div>
+        <motion.div className="absolute left-[429.52px] size-[3px] top-[414.68px]" data-node-id="71:5038" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 105">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot105} />
+        </motion.div>
+        <motion.div className="absolute left-[380.66px] size-[3px] top-[405.49px]" data-node-id="71:5037" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 104">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot104} />
+        </motion.div>
+        <motion.div className="absolute left-[331.89px] size-[3px] top-[427.76px]" data-node-id="71:5036" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 103">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot103} />
+        </motion.div>
+        <motion.div className="absolute left-[283.19px] size-[3px] top-[399.17px]" data-node-id="71:5035" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 102">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot102} />
+        </motion.div>
+        <motion.div className="absolute left-[234.59px] size-[3px] top-[425.4px]" data-node-id="71:5034" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 101">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot101} />
+        </motion.div>
+        <motion.div className="absolute left-[186.08px] size-[5px] top-[409.5px]" data-node-id="71:5033" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 100">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot100} />
+        </motion.div>
+        <motion.div className="absolute left-[137.66px] size-[3px] top-[410.23px]" data-node-id="71:5032" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 99">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot99} />
+        </motion.div>
+        <motion.div className="absolute left-[89.35px] size-[3px] top-[424.89px]" data-node-id="71:5031" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 98">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot98} />
+        </motion.div>
+        <motion.div className="absolute left-[41.13px] size-[3px] top-[399.3px]" data-node-id="71:5030" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 97">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot97} />
+        </motion.div>
+        <motion.div className="absolute left-[569.02px] size-[3px] top-[384.05px]" data-node-id="71:5029" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 96">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot96} />
+        </motion.div>
+        <motion.div className="absolute left-[521.01px] size-[3px] top-[360.87px]" data-node-id="71:5028" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 95">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot95} />
+        </motion.div>
+        <motion.div className="absolute left-[473.1px] size-[3px] top-[371.43px]" data-node-id="71:5027" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 94">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot94} />
+        </motion.div>
+        <motion.div className="absolute left-[425.3px] size-[3px] top-[376.7px]" data-node-id="71:5026" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 93">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot93} />
+        </motion.div>
+        <motion.div className="absolute left-[377.6px] size-[3px] top-[357.21px]" data-node-id="71:5025" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 92">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot92} />
+        </motion.div>
+        <motion.div className="absolute left-[330px] size-[5px] top-[385px]" data-node-id="71:5024" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 91">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot91} />
+        </motion.div>
+        <motion.div className="absolute left-[282.5px] size-[3px] top-[357.35px]" data-node-id="71:5023" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 90">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot90} />
+        </motion.div>
+        <motion.div className="absolute left-[235.09px] size-[3px] top-[376.46px]" data-node-id="71:5022" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 89">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot89} />
+        </motion.div>
+        <motion.div className="absolute left-[187.76px] size-[3px] top-[371.7px]" data-node-id="71:5021" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 88">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot88} />
+        </motion.div>
+        <motion.div className="absolute left-[140.53px] size-[3px] top-[360.67px]" data-node-id="71:5020" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 87">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot87} />
+        </motion.div>
+        <motion.div className="absolute left-[93.37px] size-[3px] top-[384.14px]" data-node-id="71:5019" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 86">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot86} />
+        </motion.div>
+        <motion.div className="absolute left-[46.29px] size-[3px] top-[355.35px]" data-node-id="71:5018" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 85">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot85} />
+        </motion.div>
+        <motion.div className="absolute left-[575.27px] size-[3px] top-[336.7px]" data-node-id="71:5017" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 84">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot84} />
+        </motion.div>
+        <motion.div className="absolute left-[528.31px] size-[3px] top-[322.49px]" data-node-id="71:5016" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 83">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot83} />
+        </motion.div>
+        <motion.div className="absolute left-[481.41px] size-[5px] top-[321.25px]" data-node-id="71:5015" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 82">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot82} />
+        </motion.div>
+        <motion.div className="absolute left-[434.55px] size-[3px] top-[337.57px]" data-node-id="71:5014" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 81">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot81} />
+        </motion.div>
+        <motion.div className="absolute left-[387.73px] size-[3px] top-[311.13px]" data-node-id="71:5013" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 80">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot80} />
+        </motion.div>
+        <motion.div className="absolute left-[340.94px] size-[3px] top-[339.66px]" data-node-id="71:5012" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 79">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot79} />
+        </motion.div>
+        <motion.div className="absolute left-[294.17px] size-[3px] top-[317.71px]" data-node-id="71:5011" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 78">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot78} />
+        </motion.div>
+        <motion.div className="absolute left-[247.42px] size-[3px] top-[326.41px]" data-node-id="71:5010" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 77">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot77} />
+        </motion.div>
+        <motion.div className="absolute left-[200.66px] size-[3px] top-[333.6px]" data-node-id="71:5009" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 76">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot76} />
+        </motion.div>
+        <motion.div className="absolute left-[153.91px] size-[3px] top-[312.71px]" data-node-id="71:5008" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 75">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot75} />
+        </motion.div>
+        <motion.div className="absolute left-[107.14px] size-[3px] top-[340.96px]" data-node-id="71:5007" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 74">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot74} />
+        </motion.div>
+        <motion.div className="absolute left-[60.34px] size-[5px] top-[313.93px]" data-node-id="71:5006" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 73">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot73} />
+        </motion.div>
+        <motion.div className="absolute left-[589.52px] size-[3px] top-[287.52px]" data-node-id="71:5005" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 72">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot72} />
+        </motion.div>
+        <motion.div className="absolute left-[542.66px] size-[3px] top-[284.71px]" data-node-id="71:5004" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 71">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot71} />
+        </motion.div>
+        <motion.div className="absolute left-[495.76px] size-[3px] top-[271.89px]" data-node-id="71:5003" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 70">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot70} />
+        </motion.div>
+        <motion.div className="absolute left-[448.8px] size-[3px] top-[296.45px]" data-node-id="71:5002" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 69">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot69} />
+        </motion.div>
+        <motion.div className="absolute left-[401.77px] size-[3px] top-[267.61px]" data-node-id="71:5001" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 68">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot68} />
+        </motion.div>
+        <motion.div className="absolute left-[354.69px] size-[3px] top-[291.96px]" data-node-id="71:5000" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 67">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot67} />
+        </motion.div>
+        <motion.div className="absolute left-[307.52px] size-[3px] top-[279.49px]" data-node-id="71:4999" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 66">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot66} />
+        </motion.div>
+        <motion.div className="absolute left-[260.28px] size-[3px] top-[276.29px]" data-node-id="71:4998" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 65">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot65} />
+        </motion.div>
+        <motion.div className="absolute left-[212.96px] size-[5px] top-[294.19px]" data-node-id="71:4997" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 64">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot64} />
+        </motion.div>
+        <motion.div className="absolute left-[165.54px] size-[3px] top-[267.03px]" data-node-id="71:4996" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 63">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot63} />
+        </motion.div>
+        <motion.div className="absolute left-[118.03px] size-[3px] top-[295.2px]" data-node-id="71:4995" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 62">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot62} />
+        </motion.div>
+        <motion.div className="absolute left-[70.42px] size-[3px] top-[274.58px]" data-node-id="71:4994" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 61">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot61} />
+        </motion.div>
+        <motion.div className="absolute left-[598.71px] size-[3px] top-[237.39px]" data-node-id="71:4993" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 60">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot60} />
+        </motion.div>
+        <motion.div className="absolute left-[550.91px] size-[3px] top-[246.46px]" data-node-id="71:4992" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 59">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot59} />
+        </motion.div>
+        <motion.div className="absolute left-[502.99px] size-[3px] top-[224.26px]" data-node-id="71:4991" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 58">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot58} />
+        </motion.div>
+        <motion.div className="absolute left-[454.98px] size-[3px] top-[252.84px]" data-node-id="71:4990" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 57">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot57} />
+        </motion.div>
+        <motion.div className="absolute left-[406.86px] size-[3px] top-[226.56px]" data-node-id="71:4989" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 56">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot56} />
+        </motion.div>
+        <motion.div className="absolute left-[358.64px] size-[5px] top-[242.56px]" data-node-id="71:4988" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 55">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot55} />
+        </motion.div>
+        <motion.div className="absolute left-[310.31px] size-[3px] top-[241.7px]" data-node-id="71:4987" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 54">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot54} />
+        </motion.div>
+        <motion.div className="absolute left-[261.89px] size-[3px] top-[227.16px]" data-node-id="71:4986" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 53">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot53} />
+        </motion.div>
+        <motion.div className="absolute left-[213.37px] size-[3px] top-[252.69px]" data-node-id="71:4985" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 52">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot52} />
+        </motion.div>
+        <motion.div className="absolute left-[164.76px] size-[3px] top-[223.93px]" data-node-id="71:4984" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 51">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot51} />
+        </motion.div>
+        <motion.div className="absolute left-[116.06px] size-[3px] top-[247.18px]" data-node-id="71:4983" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 50">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot50} />
+        </motion.div>
+        <motion.div className="absolute left-[67.28px] size-[3px] top-[236.5px]" data-node-id="71:4982" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 49">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot49} />
+        </motion.div>
+        <motion.div className="absolute left-[594.42px] size-[3px] top-[187.36px]" data-node-id="71:4981" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 48">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot48} />
+        </motion.div>
+        <motion.div className="absolute left-[545.49px] size-[3px] top-[206.76px]" data-node-id="71:4980" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 47">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot47} />
+        </motion.div>
+        <motion.div className="absolute left-[496.49px] size-[5px] top-[179px]" data-node-id="71:4979" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 46">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot46} />
+        </motion.div>
+        <motion.div className="absolute left-[447.43px] size-[3px] top-[206.69px]" data-node-id="71:4978" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 45">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot45} />
+        </motion.div>
+        <motion.div className="absolute left-[398.33px] size-[3px] top-[187.48px]" data-node-id="71:4977" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 44">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot44} />
+        </motion.div>
+        <motion.div className="absolute left-[349.17px] size-[3px] top-[192.37px]" data-node-id="71:4976" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 43">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot43} />
+        </motion.div>
+        <motion.div className="absolute left-[299.99px] size-[3px] top-[203.28px]" data-node-id="71:4975" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 42">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot42} />
+        </motion.div>
+        <motion.div className="absolute left-[250.77px] size-[3px] top-[179.88px]" data-node-id="71:4974" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 41">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot41} />
+        </motion.div>
+        <motion.div className="absolute left-[201.54px] size-[3px] top-[208.66px]" data-node-id="71:4973" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 40">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot40} />
+        </motion.div>
+        <motion.div className="absolute left-[152.29px] size-[3px] top-[183.25px]" data-node-id="71:4972" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 39">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot39} />
+        </motion.div>
+        <motion.div className="absolute left-[103.04px] size-[3px] top-[197.58px]" data-node-id="71:4971" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 38">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot38} />
+        </motion.div>
+        <motion.div className="absolute left-[53.8px] size-[5px] top-[198.69px]" data-node-id="71:4970" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 37">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot37} />
+        </motion.div>
+        <motion.div className="absolute left-[580.58px] size-[3px] top-[138.48px]" data-node-id="71:4969" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 36">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot36} />
+        </motion.div>
+        <motion.div className="absolute left-[531.38px] size-[3px] top-[164.86px]" data-node-id="71:4968" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 35">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot35} />
+        </motion.div>
+        <motion.div className="absolute left-[482.21px] size-[3px] top-[136.32px]" data-node-id="71:4967" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 34">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot34} />
+        </motion.div>
+        <motion.div className="absolute left-[433.08px] size-[3px] top-[158.35px]" data-node-id="71:4966" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 33">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot33} />
+        </motion.div>
+        <motion.div className="absolute left-[384px] size-[3px] top-[149.52px]" data-node-id="71:4965" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 32">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot32} />
+        </motion.div>
+        <motion.div className="absolute left-[334.97px] size-[3px] top-[142.46px]" data-node-id="71:4964" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 31">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot31} />
+        </motion.div>
+        <motion.div className="absolute left-[286.01px] size-[3px] top-[163.26px]" data-node-id="71:4963" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 30">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot30} />
+        </motion.div>
+        <motion.div className="absolute left-[237.11px] size-[3px] top-[135.04px]" data-node-id="71:4962" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 29">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot29} />
+        </motion.div>
+        <motion.div className="absolute left-[188.29px] size-[5px] top-[162.11px]" data-node-id="71:4961" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 28">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot28} />
+        </motion.div>
+        <motion.div className="absolute left-[139.55px] size-[3px] top-[144.42px]" data-node-id="71:4960" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 27">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot27} />
+        </motion.div>
+        <motion.div className="absolute left-[90.9px] size-[3px] top-[147.36px]" data-node-id="71:4959" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 26">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot26} />
+        </motion.div>
+        <motion.div className="absolute left-[42.34px] size-[3px] top-[160.06px]" data-node-id="71:4958" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 25">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot25} />
+        </motion.div>
+        <motion.div className="absolute left-[569.87px] size-[3px] top-[91.57px]" data-node-id="71:4957" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 24">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot24} />
+        </motion.div>
+        <motion.div className="absolute left-[521.5px] size-[3px] top-[120.41px]" data-node-id="71:4956" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 23">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot23} />
+        </motion.div>
+        <motion.div className="absolute left-[473.23px] size-[3px] top-[95.99px]" data-node-id="71:4955" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 22">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot22} />
+        </motion.div>
+        <motion.div className="absolute left-[425.06px] size-[3px] top-[108.58px]" data-node-id="71:4954" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 21">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot21} />
+        </motion.div>
+        <motion.div className="absolute left-[377px] size-[3px] top-[111.64px]" data-node-id="71:4953" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 20">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot20} />
+        </motion.div>
+        <motion.div className="absolute left-[329.04px] size-[5px] top-[93.85px]" data-node-id="71:4952" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 19">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot19} />
+        </motion.div>
+        <motion.div className="absolute left-[281.18px] size-[3px] top-[120.97px]" data-node-id="71:4951" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 18">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot18} />
+        </motion.div>
+        <motion.div className="absolute left-[233.43px] size-[3px] top-[92.77px]" data-node-id="71:4950" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 17">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot17} />
+        </motion.div>
+        <motion.div className="absolute left-[185.78px] size-[3px] top-[113.48px]" data-node-id="71:4949" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 16">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot16} />
+        </motion.div>
+        <motion.div className="absolute left-[138.22px] size-[3px] top-[106.54px]" data-node-id="71:4948" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 15">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot15} />
+        </motion.div>
+        <motion.div className="absolute left-[90.76px] size-[3px] top-[97.6px]" data-node-id="71:4947" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 14">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot14} />
+        </motion.div>
+        <motion.div className="absolute left-[43.39px] size-[3px] top-[119.71px]" data-node-id="71:4946" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 13">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot13} />
+        </motion.div>
+        <motion.div className="absolute left-[572.11px] size-[3px] top-[47.15px]" data-node-id="71:4945" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 12">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot12} />
+        </motion.div>
+        <motion.div className="absolute left-[524.91px] size-[3px] top-[73.48px]" data-node-id="71:4944" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 11">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot11} />
+        </motion.div>
+        <motion.div className="absolute left-[477.79px] size-[5px] top-[57.38px]" data-node-id="71:4943" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 10">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot10} />
+        </motion.div>
+        <motion.div className="absolute left-[430.74px] size-[3px] top-[58.36px]" data-node-id="71:4942" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 9">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot9} />
+        </motion.div>
+        <motion.div className="absolute left-[383.75px] size-[3px] top-[72.8px]" data-node-id="71:4941" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 8">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot8} />
+        </motion.div>
+        <motion.div className="absolute left-[336.82px] size-[3px] top-[47.33px]" data-node-id="71:4940" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 7">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot7} />
+        </motion.div>
+        <motion.div className="absolute left-[289.94px] size-[3px] top-[76.09px]" data-node-id="71:4939" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 6">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot6} />
+        </motion.div>
+        <motion.div className="absolute left-[243.1px] size-[3px] top-[52.77px]" data-node-id="71:4938" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 5">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot5} />
+        </motion.div>
+        <motion.div className="absolute left-[196.3px] size-[3px] top-[63.56px]" data-node-id="71:4937" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 4">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot4} />
+        </motion.div>
+        <motion.div className="absolute left-[149.52px] size-[3px] top-[68.58px]" data-node-id="71:4936" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 3">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot3} />
+        </motion.div>
+        <motion.div className="absolute left-[102.75px] size-[3px] top-[49.28px]" data-node-id="71:4935" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 2">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot2} />
+        </motion.div>
+        <motion.div className="absolute left-[56px] size-[5px] top-[77px]" data-node-id="71:4934" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Dot 1">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDot1} />
+        </motion.div>
+        <motion.div className="absolute left-[590.85px] size-[3px] top-[471.33px]" data-node-id="71:8408" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Cyan grid pulse / 120">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgCyanGridPulse120} />
+        </motion.div>
+        <motion.div className="absolute left-[98.75px] size-[3px] top-[463.77px]" data-node-id="71:8493" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Cyan grid pulse / 110">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgCyanGridPulse110} />
+        </motion.div>
+        <motion.div className="absolute left-[186.08px] size-[5px] top-[409.5px]" data-node-id="71:8578" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Cyan grid pulse / 100">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgCyanGridPulse100} />
+        </motion.div>
+        <motion.div className="absolute left-[282.5px] size-[3px] top-[357.35px]" data-node-id="71:8663" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Cyan grid pulse / 90">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgCyanGridPulse90} />
+        </motion.div>
+        <motion.div className="absolute left-[387.73px] size-[3px] top-[311.13px]" data-node-id="71:8748" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Cyan grid pulse / 80">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgCyanGridPulse80} />
+        </motion.div>
+        <motion.div className="absolute left-[495.76px] size-[3px] top-[271.89px]" data-node-id="71:8833" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Cyan grid pulse / 70">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgCyanGridPulse70} />
+        </motion.div>
+        <motion.div className="absolute left-[598.71px] size-[3px] top-[237.39px]" data-node-id="71:8918" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Cyan grid pulse / 60">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgCyanGridPulse60} />
+        </motion.div>
+        <motion.div className="absolute left-[116.06px] size-[3px] top-[247.18px]" data-node-id="71:9003" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Cyan grid pulse / 50">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgCyanGridPulse50} />
+        </motion.div>
+        <motion.div className="absolute left-[201.54px] size-[3px] top-[208.66px]" data-node-id="71:9088" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Cyan grid pulse / 40">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgCyanGridPulse40} />
+        </motion.div>
+        <motion.div className="absolute left-[286.01px] size-[3px] top-[163.26px]" data-node-id="71:9173" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Cyan grid pulse / 30">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgCyanGridPulse30} />
+        </motion.div>
+        <motion.div className="absolute left-[377px] size-[3px] top-[111.64px]" data-node-id="71:9258" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Cyan grid pulse / 20">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgCyanGridPulse20} />
+        </motion.div>
+        <motion.div className="absolute left-[477.79px] size-[5px] top-[57.38px]" data-node-id="71:9343" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Cyan grid pulse / 10">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgCyanGridPulse10} />
+        </motion.div>
+      </div>
+      <motion.div className="absolute h-[520px] left-0 top-0 w-[640px]" data-node-id="71:4714" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Grid lines">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgGridLines} />
+      </motion.div>
+    </div>
+  );
+}

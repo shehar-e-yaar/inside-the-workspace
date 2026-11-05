@@ -15,7 +15,9 @@ import {forgeProjects} from './forgeData';
 function DockTrack({children,progress,enabled,i,width,mobile,fanX,fanY,angle,layer}:{children:ReactNode;progress:MotionValue<number>;enabled:boolean;i:number;width:number;mobile:boolean;fanX:number;fanY:number;angle:number;layer:number}){
  const reduced=useReducedMotion();const input=useTransform(progress,v=>reduced?(v>.5?1:0):v);
  const a=-angle*Math.PI/180,scale=mobile?.27:.31;
- const targetX=-width/2+48+(i%(mobile?4:3))*(mobile?77:83),targetY=mobile?-200+Math.floor(i/4)*92:-160+Math.floor(i/3)*108;
+ // Center the dock and capped-width book as one group on wide screens.
+ const dockInset=mobile?0:Math.max(0,(width-945)/2);
+ const targetX=-width/2+dockInset+48+(i%(mobile?4:3))*(mobile?77:83),targetY=mobile?-200+Math.floor(i/4)*92:-160+Math.floor(i/3)*108;
  const dx=targetX-scale*(fanX*Math.cos(a)-fanY*Math.sin(a)),dy=targetY-scale*(fanX*Math.sin(a)+fanY*Math.cos(a));
  const x=useTransform(input,v=>enabled?v*dx:0),y=useTransform(input,v=>enabled?v*dy:0),r=useTransform(input,v=>enabled?-angle*v:0),z=useTransform(input,v=>enabled?1-(1-scale)*v:1);
  return <motion.div className="dock-track" style={{x,y,rotate:r,scale:z,zIndex:layer}}>{children}</motion.div>;

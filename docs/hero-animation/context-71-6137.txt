@@ -1,0 +1,71 @@
+const assetPathPrefix = "https://www.figma.com/api/mcp/asset/3048d30a-d5c9-4b76-ab54-51d81d75a1d2";
+const imgGeometricGlyph = `${assetPathPrefix}/cd9fd.svg`;
+const imgGeometricGlyph1 = `${assetPathPrefix}/21582.svg`;
+const imgGeometricGlyph2 = `${assetPathPrefix}/d4d09.svg`;
+const imgGeometricGlyph3 = `${assetPathPrefix}/1f228.svg`;
+const imgGeometricGlyph4 = `${assetPathPrefix}/49508.svg`;
+const imgConnections = `${assetPathPrefix}/d19a4.svg`;
+
+export default function CombinedHeroMobileStaticPipeline() {
+  return (
+    <div className="bg-[#0a0b0f] relative size-full" data-node-id="71:6137" data-name="Combined hero / Mobile static pipeline">
+      <div className="absolute h-[520px] left-0 top-0 w-[390px]" data-node-id="71:6156" style={{ backgroundImage: "url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 390 520' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(0 26 19.5 0 195 260)'><stop stop-color='rgba(10,11,15,0)' offset='0'/><stop stop-color='rgba(10,11,15,0)' offset='0.67'/><stop stop-color='rgba(10,11,15,1)' offset='1'/></radialGradient></defs></svg>\")" }} data-name="Soft radial edge fade" />
+      <div className="[word-break:break-word] absolute font-['JetBrains_Mono:Regular'] font-normal leading-[0] left-[219px] text-[#7b8196] text-[11px] top-[383px] w-[128px]" data-node-id="71:6155">
+        <p className="leading-[1.4] mb-0">events/sec</p>
+        <p className="leading-[1.4]">12,480</p>
+      </div>
+      <div className="absolute bg-[#11131a] border border-[rgba(255,255,255,0.08)] border-solid h-[86px] left-[43px] overflow-clip rounded-[16px] top-[362px] w-[130px]" data-node-id="71:6152" data-name="Node / Snowflake">
+        <p className="[word-break:break-word] absolute font-['Space_Grotesk:Regular'] font-normal leading-[1.4] left-[15px] text-[#7b8196] text-[11px] top-[56px] w-[110px]" data-node-id="71:6154">
+          Snowflake
+        </p>
+        <div className="absolute left-[15px] size-[32px] top-[15px]" data-node-id="71:6153" data-name="Geometric glyph">
+          <div className="absolute inset-[0_-0.77%]">
+            <img alt="" className="block max-w-none size-full" src={imgGeometricGlyph} />
+          </div>
+        </div>
+      </div>
+      <div className="absolute bg-[#11131a] border border-[rgba(255,255,255,0.08)] border-solid h-[86px] left-[43px] overflow-clip rounded-[16px] top-[222px] w-[130px]" data-node-id="71:6149" data-name="Node / PostgreSQL">
+        <p className="[word-break:break-word] absolute font-['Space_Grotesk:Regular'] font-normal leading-[1.4] left-[15px] text-[#7b8196] text-[11px] top-[56px] w-[110px]" data-node-id="71:6151">
+          PostgreSQL
+        </p>
+        <div className="absolute left-[15px] size-[32px] top-[15px]" data-node-id="71:6150" data-name="Geometric glyph">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgGeometricGlyph1} />
+        </div>
+      </div>
+      <div className="absolute bg-[#11131a] border border-[rgba(79,209,255,0.25)] border-solid h-[86px] left-[217px] overflow-clip rounded-[16px] top-[222px] w-[130px]" data-node-id="71:6146" data-name="Node / Airflow">
+        <p className="[word-break:break-word] absolute font-['Space_Grotesk:Regular'] font-normal leading-[1.4] left-[15px] text-[#7b8196] text-[11px] top-[56px] w-[110px]" data-node-id="71:6148">
+          Airflow
+        </p>
+        <div className="absolute left-[15px] size-[32px] top-[15px]" data-node-id="71:6147" data-name="Geometric glyph">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgGeometricGlyph2} />
+        </div>
+      </div>
+      <div className="absolute bg-[#11131a] border border-[rgba(255,255,255,0.08)] border-solid h-[86px] left-[217px] overflow-clip rounded-[16px] top-[82px] w-[130px]" data-node-id="71:6143" data-name="Node / PySpark">
+        <p className="[word-break:break-word] absolute font-['Space_Grotesk:Regular'] font-normal leading-[1.4] left-[15px] text-[#7b8196] text-[11px] top-[56px] w-[110px]" data-node-id="71:6145">
+          PySpark
+        </p>
+        <div className="absolute left-[15px] size-[32px] top-[15px]" data-node-id="71:6144" data-name="Geometric glyph">
+          <div className="absolute inset-[0_0_56%_0]">
+            <img alt="" className="block max-w-none size-full" src={imgGeometricGlyph3} />
+          </div>
+        </div>
+      </div>
+      <div className="absolute bg-[#11131a] border border-[rgba(255,255,255,0.08)] border-solid h-[86px] left-[43px] overflow-clip rounded-[16px] top-[82px] w-[130px]" data-node-id="71:6140" data-name="Node / Kafka">
+        <p className="[word-break:break-word] absolute font-['Space_Grotesk:Regular'] font-normal leading-[1.4] left-[15px] text-[#7b8196] text-[11px] top-[56px] w-[110px]" data-node-id="71:6142">
+          Kafka
+        </p>
+        <div className="absolute left-[15px] size-[32px] top-[15px]" data-node-id="71:6141" data-name="Geometric glyph">
+          <div className="absolute inset-[-1.72%_-2.09%_-1.72%_0]">
+            <img alt="" className="block max-w-none size-full" src={imgGeometricGlyph4} />
+          </div>
+        </div>
+      </div>
+      <div className="absolute h-[237px] left-[108px] top-[125px] w-[174px]" data-node-id="71:6139" data-name="Connections">
+        <div className="absolute inset-[-0.21%_-0.29%_0_-0.29%]">
+          <img alt="" className="block max-w-none size-full" src={imgConnections} />
+        </div>
+      </div>
+      <p className="[word-break:break-word] absolute font-['JetBrains_Mono:Regular'] font-normal leading-[1.4] left-[43px] text-[#7b8196] text-[10px] top-[33px] w-[250px]" data-node-id="71:6138">{`edit -> engineer`}</p>
+    </div>
+  );
+}

@@ -1,0 +1,87 @@
+const assetPathPrefix = "https://www.figma.com/api/mcp/asset/e6b41e05-aae4-4565-9261-a6b05b581db1";
+import { motion } from "motion/react";
+const imgPacket4 = `${assetPathPrefix}/9b98e.svg`;
+const imgPacket3 = `${assetPathPrefix}/a9f84.svg`;
+const imgPacket2 = `${assetPathPrefix}/36a8e.svg`;
+const imgPacket1 = `${assetPathPrefix}/b8271.svg`;
+const imgGeometricGlyph = `${assetPathPrefix}/cd9fd.svg`;
+const imgGeometricGlyph1 = `${assetPathPrefix}/21582.svg`;
+const imgGeometricGlyph2 = `${assetPathPrefix}/d4d09.svg`;
+const imgGeometricGlyph3 = `${assetPathPrefix}/1f228.svg`;
+const imgGeometricGlyph4 = `${assetPathPrefix}/49508.svg`;
+const imgConnections = `${assetPathPrefix}/a2f1d.svg`;
+
+export default function Pipeline() {
+  return (
+    <motion.div className="opacity-0 relative size-full" data-node-id="71:5718" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Pipeline">
+      <div className="absolute h-[30px] left-[228px] overflow-clip top-[366px] w-[210px]" data-node-id="71:5744" data-name="Counter">
+        <p className="[word-break:break-word] absolute font-['JetBrains_Mono:Regular'] font-normal leading-[1.4] left-0 text-[#7b8196] text-[11px] top-0 w-[200px]" data-node-id="71:5745">
+          events/sec 12,480
+        </p>
+      </div>
+      <div className="absolute h-[520px] left-0 overflow-clip top-0 w-[640px]" data-node-id="71:5739" data-name="Packets">
+        <motion.div className="absolute left-[497px] size-[5px] top-[268.5px]" data-node-id="71:5743" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Packet 4">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgPacket4} />
+        </motion.div>
+        <motion.div className="absolute left-[377px] size-[5px] top-[240.5px]" data-node-id="71:5742" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Packet 3">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgPacket3} />
+        </motion.div>
+        <motion.div className="absolute left-[257px] size-[5px] top-[240.5px]" data-node-id="71:5741" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Packet 2">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgPacket2} />
+        </motion.div>
+        <motion.div className="absolute left-[137px] size-[5px] top-[268.5px]" data-node-id="71:5740" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Packet 1">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgPacket1} />
+        </motion.div>
+      </div>
+      <motion.div className="absolute bg-[#11131a] border border-[rgba(255,255,255,0.08)] border-solid drop-shadow-[0px_12px_14px_rgba(0,0,0,0.25)] left-[512px] opacity-0 rounded-[16px] size-[96px] top-[240px]" data-node-id="71:5736" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Node / Snowflake">
+        <p className="[word-break:break-word] absolute font-['Space_Grotesk:Regular'] font-normal leading-[1.4] left-[9px] text-[#7b8196] text-[10px] top-[61px] w-[82px]" data-node-id="71:5738">
+          Snowflake
+        </p>
+        <div className="absolute left-[31px] size-[32px] top-[15px]" data-node-id="71:5737" data-name="Geometric glyph">
+          <div className="absolute inset-[0_-0.77%]">
+            <img alt="" className="block max-w-none size-full" src={imgGeometricGlyph} />
+          </div>
+        </div>
+      </motion.div>
+      <motion.div className="absolute bg-[#11131a] border border-[rgba(255,255,255,0.08)] border-solid drop-shadow-[0px_12px_14px_rgba(0,0,0,0.25)] left-[392px] opacity-0 rounded-[16px] size-[96px] top-[207px]" data-node-id="71:5733" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Node / PostgreSQL">
+        <p className="[word-break:break-word] absolute font-['Space_Grotesk:Regular'] font-normal leading-[1.4] left-[9px] text-[#7b8196] text-[10px] top-[61px] w-[82px]" data-node-id="71:5735">
+          PostgreSQL
+        </p>
+        <div className="absolute left-[31px] size-[32px] top-[15px]" data-node-id="71:5734" data-name="Geometric glyph">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgGeometricGlyph1} />
+        </div>
+      </motion.div>
+      <motion.div className="absolute bg-[#11131a] border border-[rgba(79,209,255,0.25)] border-solid drop-shadow-[0px_12px_14px_rgba(0,0,0,0.25)] left-[272px] opacity-0 rounded-[16px] size-[96px] top-[184px]" data-node-id="71:5730" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Node / Airflow">
+        <p className="[word-break:break-word] absolute font-['Space_Grotesk:Regular'] font-normal leading-[1.4] left-[9px] text-[#7b8196] text-[10px] top-[61px] w-[82px]" data-node-id="71:5732">
+          Airflow
+        </p>
+        <div className="absolute left-[31px] size-[32px] top-[15px]" data-node-id="71:5731" data-name="Geometric glyph">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgGeometricGlyph2} />
+        </div>
+      </motion.div>
+      <motion.div className="absolute bg-[#11131a] border border-[rgba(255,255,255,0.08)] border-solid drop-shadow-[0px_12px_14px_rgba(0,0,0,0.25)] left-[152px] opacity-0 rounded-[16px] size-[96px] top-[207px]" data-node-id="71:5727" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Node / PySpark">
+        <p className="[word-break:break-word] absolute font-['Space_Grotesk:Regular'] font-normal leading-[1.4] left-[9px] text-[#7b8196] text-[10px] top-[61px] w-[82px]" data-node-id="71:5729">
+          PySpark
+        </p>
+        <div className="absolute left-[31px] size-[32px] top-[15px]" data-node-id="71:5728" data-name="Geometric glyph">
+          <div className="absolute inset-[0_0_56%_0]">
+            <img alt="" className="block max-w-none size-full" src={imgGeometricGlyph3} />
+          </div>
+        </div>
+      </motion.div>
+      <motion.div className="absolute bg-[#11131a] border border-[rgba(255,255,255,0.08)] border-solid drop-shadow-[0px_12px_14px_rgba(0,0,0,0.25)] left-[32px] opacity-0 rounded-[16px] size-[96px] top-[240px]" data-node-id="71:5724" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Node / Kafka">
+        <p className="[word-break:break-word] absolute font-['Space_Grotesk:Regular'] font-normal leading-[1.4] left-[9px] text-[#7b8196] text-[10px] top-[61px] w-[82px]" data-node-id="71:5726">
+          Kafka
+        </p>
+        <div className="absolute left-[31px] size-[32px] top-[15px]" data-node-id="71:5725" data-name="Geometric glyph">
+          <div className="absolute inset-[-1.72%_-2.09%_-1.72%_0]">
+            <img alt="" className="block max-w-none size-full" src={imgGeometricGlyph4} />
+          </div>
+        </div>
+      </motion.div>
+      <div className="absolute h-[520px] left-0 top-0 w-[640px]" data-node-id="71:5719" data-name="Connections">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgConnections} />
+      </div>
+    </motion.div>
+  );
+}

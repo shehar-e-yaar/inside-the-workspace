@@ -1,0 +1,365 @@
+const assetPathPrefix = "https://www.figma.com/api/mcp/asset/1afbfa48-96f8-4b9d-907b-68ae8f93c8fa";
+import { motion } from "motion/react";
+const imgPlayhead = `${assetPathPrefix}/f5231.svg`;
+
+export default function Timeline() {
+  return (
+    <motion.div className="relative size-full" data-node-id="71:5396" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Timeline">
+      <motion.div className="absolute h-[190px] left-[94px] top-[175px] w-[8px]" data-node-id="71:5715" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Playhead">
+        <div className="absolute inset-[-3.16%_-106.25%_-5.79%_-106.25%]">
+          <img alt="" className="block max-w-none size-full" src={imgPlayhead} />
+        </div>
+      </motion.div>
+      <motion.div className="absolute bg-[rgba(123,129,150,0.15)] border border-[rgba(123,129,150,0.1)] border-solid h-[36px] left-[398px] overflow-clip rounded-[5px] top-[312px] w-[148px]" data-node-id="71:5681" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Clip 9">
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[11px] left-[135px] top-[11.5px] w-px" data-node-id="71:5714" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[4px] left-[131px] top-[15px] w-px" data-node-id="71:5713" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[12px] left-[127px] top-[11px] w-px" data-node-id="71:5712" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[5px] left-[123px] top-[14.5px] w-px" data-node-id="71:5711" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[13px] left-[119px] top-[10.5px] w-px" data-node-id="71:5710" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[6px] left-[115px] top-[14px] w-px" data-node-id="71:5709" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[14px] left-[111px] top-[10px] w-px" data-node-id="71:5708" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[7px] left-[107px] top-[13.5px] w-px" data-node-id="71:5707" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[15px] left-[103px] top-[9.5px] w-px" data-node-id="71:5706" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[8px] left-[99px] top-[13px] w-px" data-node-id="71:5705" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[16px] left-[95px] top-[9px] w-px" data-node-id="71:5704" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[9px] left-[91px] top-[12.5px] w-px" data-node-id="71:5703" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[17px] left-[87px] top-[8.5px] w-px" data-node-id="71:5702" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[10px] left-[83px] top-[12px] w-px" data-node-id="71:5701" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[3px] left-[79px] top-[15.5px] w-px" data-node-id="71:5700" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[11px] left-[75px] top-[11.5px] w-px" data-node-id="71:5699" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[4px] left-[71px] top-[15px] w-px" data-node-id="71:5698" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[12px] left-[67px] top-[11px] w-px" data-node-id="71:5697" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[5px] left-[63px] top-[14.5px] w-px" data-node-id="71:5696" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[13px] left-[59px] top-[10.5px] w-px" data-node-id="71:5695" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[6px] left-[55px] top-[14px] w-px" data-node-id="71:5694" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[14px] left-[51px] top-[10px] w-px" data-node-id="71:5693" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[7px] left-[47px] top-[13.5px] w-px" data-node-id="71:5692" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[15px] left-[43px] top-[9.5px] w-px" data-node-id="71:5691" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[8px] left-[39px] top-[13px] w-px" data-node-id="71:5690" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[16px] left-[35px] top-[9px] w-px" data-node-id="71:5689" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[9px] left-[31px] top-[12.5px] w-px" data-node-id="71:5688" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[17px] left-[27px] top-[8.5px] w-px" data-node-id="71:5687" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[10px] left-[23px] top-[12px] w-px" data-node-id="71:5686" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[3px] left-[19px] top-[15.5px] w-px" data-node-id="71:5685" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[11px] left-[15px] top-[11.5px] w-px" data-node-id="71:5684" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[4px] left-[11px] top-[15px] w-px" data-node-id="71:5683" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[12px] left-[7px] top-[11px] w-px" data-node-id="71:5682" data-name="Waveform sample" />
+      </motion.div>
+      <motion.div className="absolute bg-[rgba(123,129,150,0.15)] border border-[rgba(123,129,150,0.1)] border-solid h-[36px] left-[190px] overflow-clip rounded-[5px] top-[312px] w-[197px]" data-node-id="71:5635" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Clip 8">
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[17px] left-[183px] top-[8.5px] w-px" data-node-id="71:5680" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[10px] left-[179px] top-[12px] w-px" data-node-id="71:5679" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[3px] left-[175px] top-[15.5px] w-px" data-node-id="71:5678" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[11px] left-[171px] top-[11.5px] w-px" data-node-id="71:5677" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[4px] left-[167px] top-[15px] w-px" data-node-id="71:5676" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[12px] left-[163px] top-[11px] w-px" data-node-id="71:5675" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[5px] left-[159px] top-[14.5px] w-px" data-node-id="71:5674" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[13px] left-[155px] top-[10.5px] w-px" data-node-id="71:5673" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[6px] left-[151px] top-[14px] w-px" data-node-id="71:5672" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[14px] left-[147px] top-[10px] w-px" data-node-id="71:5671" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[7px] left-[143px] top-[13.5px] w-px" data-node-id="71:5670" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[15px] left-[139px] top-[9.5px] w-px" data-node-id="71:5669" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[8px] left-[135px] top-[13px] w-px" data-node-id="71:5668" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[16px] left-[131px] top-[9px] w-px" data-node-id="71:5667" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[9px] left-[127px] top-[12.5px] w-px" data-node-id="71:5666" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[17px] left-[123px] top-[8.5px] w-px" data-node-id="71:5665" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[10px] left-[119px] top-[12px] w-px" data-node-id="71:5664" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[3px] left-[115px] top-[15.5px] w-px" data-node-id="71:5663" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[11px] left-[111px] top-[11.5px] w-px" data-node-id="71:5662" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[4px] left-[107px] top-[15px] w-px" data-node-id="71:5661" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[12px] left-[103px] top-[11px] w-px" data-node-id="71:5660" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[5px] left-[99px] top-[14.5px] w-px" data-node-id="71:5659" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[13px] left-[95px] top-[10.5px] w-px" data-node-id="71:5658" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[6px] left-[91px] top-[14px] w-px" data-node-id="71:5657" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[14px] left-[87px] top-[10px] w-px" data-node-id="71:5656" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[7px] left-[83px] top-[13.5px] w-px" data-node-id="71:5655" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[15px] left-[79px] top-[9.5px] w-px" data-node-id="71:5654" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[8px] left-[75px] top-[13px] w-px" data-node-id="71:5653" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[16px] left-[71px] top-[9px] w-px" data-node-id="71:5652" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[9px] left-[67px] top-[12.5px] w-px" data-node-id="71:5651" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[17px] left-[63px] top-[8.5px] w-px" data-node-id="71:5650" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[10px] left-[59px] top-[12px] w-px" data-node-id="71:5649" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[3px] left-[55px] top-[15.5px] w-px" data-node-id="71:5648" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[11px] left-[51px] top-[11.5px] w-px" data-node-id="71:5647" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[4px] left-[47px] top-[15px] w-px" data-node-id="71:5646" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[12px] left-[43px] top-[11px] w-px" data-node-id="71:5645" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[5px] left-[39px] top-[14.5px] w-px" data-node-id="71:5644" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[13px] left-[35px] top-[10.5px] w-px" data-node-id="71:5643" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[6px] left-[31px] top-[14px] w-px" data-node-id="71:5642" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[14px] left-[27px] top-[10px] w-px" data-node-id="71:5641" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[7px] left-[23px] top-[13.5px] w-px" data-node-id="71:5640" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[15px] left-[19px] top-[9.5px] w-px" data-node-id="71:5639" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[8px] left-[15px] top-[13px] w-px" data-node-id="71:5638" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[16px] left-[11px] top-[9px] w-px" data-node-id="71:5637" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[9px] left-[7px] top-[12.5px] w-px" data-node-id="71:5636" data-name="Waveform sample" />
+      </motion.div>
+      <motion.div className="absolute bg-[rgba(123,129,150,0.15)] border border-[rgba(123,129,150,0.1)] border-solid h-[36px] left-[94px] overflow-clip rounded-[5px] top-[312px] w-[85px]" data-node-id="71:5617" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Clip 7">
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[13px] left-[71px] top-[10.5px] w-px" data-node-id="71:5634" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[6px] left-[67px] top-[14px] w-px" data-node-id="71:5633" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[14px] left-[63px] top-[10px] w-px" data-node-id="71:5632" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[7px] left-[59px] top-[13.5px] w-px" data-node-id="71:5631" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[15px] left-[55px] top-[9.5px] w-px" data-node-id="71:5630" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[8px] left-[51px] top-[13px] w-px" data-node-id="71:5629" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[16px] left-[47px] top-[9px] w-px" data-node-id="71:5628" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[9px] left-[43px] top-[12.5px] w-px" data-node-id="71:5627" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[17px] left-[39px] top-[8.5px] w-px" data-node-id="71:5626" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[10px] left-[35px] top-[12px] w-px" data-node-id="71:5625" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[3px] left-[31px] top-[15.5px] w-px" data-node-id="71:5624" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[11px] left-[27px] top-[11.5px] w-px" data-node-id="71:5623" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[4px] left-[23px] top-[15px] w-px" data-node-id="71:5622" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[12px] left-[19px] top-[11px] w-px" data-node-id="71:5621" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[5px] left-[15px] top-[14.5px] w-px" data-node-id="71:5620" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[13px] left-[11px] top-[10.5px] w-px" data-node-id="71:5619" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[6px] left-[7px] top-[14px] w-px" data-node-id="71:5618" data-name="Waveform sample" />
+      </motion.div>
+      <motion.div className="absolute bg-[rgba(123,129,150,0.15)] border border-[rgba(123,129,150,0.1)] border-solid h-[36px] left-[389px] overflow-clip rounded-[5px] top-[258px] w-[157px]" data-node-id="71:5581" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Clip 6">
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[16px] left-[143px] top-[9px] w-px" data-node-id="71:5616" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[9px] left-[139px] top-[12.5px] w-px" data-node-id="71:5615" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[17px] left-[135px] top-[8.5px] w-px" data-node-id="71:5614" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[10px] left-[131px] top-[12px] w-px" data-node-id="71:5613" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[3px] left-[127px] top-[15.5px] w-px" data-node-id="71:5612" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[11px] left-[123px] top-[11.5px] w-px" data-node-id="71:5611" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[4px] left-[119px] top-[15px] w-px" data-node-id="71:5610" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[12px] left-[115px] top-[11px] w-px" data-node-id="71:5609" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[5px] left-[111px] top-[14.5px] w-px" data-node-id="71:5608" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[13px] left-[107px] top-[10.5px] w-px" data-node-id="71:5607" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[6px] left-[103px] top-[14px] w-px" data-node-id="71:5606" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[14px] left-[99px] top-[10px] w-px" data-node-id="71:5605" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[7px] left-[95px] top-[13.5px] w-px" data-node-id="71:5604" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[15px] left-[91px] top-[9.5px] w-px" data-node-id="71:5603" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[8px] left-[87px] top-[13px] w-px" data-node-id="71:5602" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[16px] left-[83px] top-[9px] w-px" data-node-id="71:5601" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[9px] left-[79px] top-[12.5px] w-px" data-node-id="71:5600" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[17px] left-[75px] top-[8.5px] w-px" data-node-id="71:5599" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[10px] left-[71px] top-[12px] w-px" data-node-id="71:5598" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[3px] left-[67px] top-[15.5px] w-px" data-node-id="71:5597" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[11px] left-[63px] top-[11.5px] w-px" data-node-id="71:5596" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[4px] left-[59px] top-[15px] w-px" data-node-id="71:5595" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[12px] left-[55px] top-[11px] w-px" data-node-id="71:5594" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[5px] left-[51px] top-[14.5px] w-px" data-node-id="71:5593" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[13px] left-[47px] top-[10.5px] w-px" data-node-id="71:5592" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[6px] left-[43px] top-[14px] w-px" data-node-id="71:5591" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[14px] left-[39px] top-[10px] w-px" data-node-id="71:5590" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[7px] left-[35px] top-[13.5px] w-px" data-node-id="71:5589" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[15px] left-[31px] top-[9.5px] w-px" data-node-id="71:5588" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[8px] left-[27px] top-[13px] w-px" data-node-id="71:5587" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[16px] left-[23px] top-[9px] w-px" data-node-id="71:5586" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[9px] left-[19px] top-[12.5px] w-px" data-node-id="71:5585" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[17px] left-[15px] top-[8.5px] w-px" data-node-id="71:5584" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[10px] left-[11px] top-[12px] w-px" data-node-id="71:5583" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[3px] left-[7px] top-[15.5px] w-px" data-node-id="71:5582" data-name="Waveform sample" />
+      </motion.div>
+      <motion.div className="absolute bg-[rgba(79,209,255,0.21)] border border-[rgba(79,209,255,0.31)] border-solid h-[36px] left-[270px] overflow-clip rounded-[5px] top-[258px] w-[108px]" data-node-id="71:5557" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Clip 5">
+        <div className="absolute bg-[rgba(79,209,255,0.5)] h-[4px] left-[95px] top-[15px] w-px" data-node-id="71:5580" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(79,209,255,0.5)] h-[12px] left-[91px] top-[11px] w-px" data-node-id="71:5579" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(79,209,255,0.5)] h-[5px] left-[87px] top-[14.5px] w-px" data-node-id="71:5578" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(79,209,255,0.5)] h-[13px] left-[83px] top-[10.5px] w-px" data-node-id="71:5577" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(79,209,255,0.5)] h-[6px] left-[79px] top-[14px] w-px" data-node-id="71:5576" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(79,209,255,0.5)] h-[14px] left-[75px] top-[10px] w-px" data-node-id="71:5575" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(79,209,255,0.5)] h-[7px] left-[71px] top-[13.5px] w-px" data-node-id="71:5574" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(79,209,255,0.5)] h-[15px] left-[67px] top-[9.5px] w-px" data-node-id="71:5573" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(79,209,255,0.5)] h-[8px] left-[63px] top-[13px] w-px" data-node-id="71:5572" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(79,209,255,0.5)] h-[16px] left-[59px] top-[9px] w-px" data-node-id="71:5571" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(79,209,255,0.5)] h-[9px] left-[55px] top-[12.5px] w-px" data-node-id="71:5570" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(79,209,255,0.5)] h-[17px] left-[51px] top-[8.5px] w-px" data-node-id="71:5569" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(79,209,255,0.5)] h-[10px] left-[47px] top-[12px] w-px" data-node-id="71:5568" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(79,209,255,0.5)] h-[3px] left-[43px] top-[15.5px] w-px" data-node-id="71:5567" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(79,209,255,0.5)] h-[11px] left-[39px] top-[11.5px] w-px" data-node-id="71:5566" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(79,209,255,0.5)] h-[4px] left-[35px] top-[15px] w-px" data-node-id="71:5565" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(79,209,255,0.5)] h-[12px] left-[31px] top-[11px] w-px" data-node-id="71:5564" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(79,209,255,0.5)] h-[5px] left-[27px] top-[14.5px] w-px" data-node-id="71:5563" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(79,209,255,0.5)] h-[13px] left-[23px] top-[10.5px] w-px" data-node-id="71:5562" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(79,209,255,0.5)] h-[6px] left-[19px] top-[14px] w-px" data-node-id="71:5561" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(79,209,255,0.5)] h-[14px] left-[15px] top-[10px] w-px" data-node-id="71:5560" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(79,209,255,0.5)] h-[7px] left-[11px] top-[13.5px] w-px" data-node-id="71:5559" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(79,209,255,0.5)] h-[15px] left-[7px] top-[9.5px] w-px" data-node-id="71:5558" data-name="Waveform sample" />
+      </motion.div>
+      <motion.div className="absolute bg-[rgba(123,129,150,0.15)] border border-[rgba(123,129,150,0.1)] border-solid h-[36px] left-[94px] overflow-clip rounded-[5px] top-[258px] w-[165px]" data-node-id="71:5519" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Clip 4">
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[9px] left-[151px] top-[12.5px] w-px" data-node-id="71:5556" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[17px] left-[147px] top-[8.5px] w-px" data-node-id="71:5555" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[10px] left-[143px] top-[12px] w-px" data-node-id="71:5554" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[3px] left-[139px] top-[15.5px] w-px" data-node-id="71:5553" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[11px] left-[135px] top-[11.5px] w-px" data-node-id="71:5552" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[4px] left-[131px] top-[15px] w-px" data-node-id="71:5551" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[12px] left-[127px] top-[11px] w-px" data-node-id="71:5550" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[5px] left-[123px] top-[14.5px] w-px" data-node-id="71:5549" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[13px] left-[119px] top-[10.5px] w-px" data-node-id="71:5548" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[6px] left-[115px] top-[14px] w-px" data-node-id="71:5547" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[14px] left-[111px] top-[10px] w-px" data-node-id="71:5546" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[7px] left-[107px] top-[13.5px] w-px" data-node-id="71:5545" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[15px] left-[103px] top-[9.5px] w-px" data-node-id="71:5544" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[8px] left-[99px] top-[13px] w-px" data-node-id="71:5543" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[16px] left-[95px] top-[9px] w-px" data-node-id="71:5542" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[9px] left-[91px] top-[12.5px] w-px" data-node-id="71:5541" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[17px] left-[87px] top-[8.5px] w-px" data-node-id="71:5540" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[10px] left-[83px] top-[12px] w-px" data-node-id="71:5539" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[3px] left-[79px] top-[15.5px] w-px" data-node-id="71:5538" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[11px] left-[75px] top-[11.5px] w-px" data-node-id="71:5537" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[4px] left-[71px] top-[15px] w-px" data-node-id="71:5536" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[12px] left-[67px] top-[11px] w-px" data-node-id="71:5535" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[5px] left-[63px] top-[14.5px] w-px" data-node-id="71:5534" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[13px] left-[59px] top-[10.5px] w-px" data-node-id="71:5533" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[6px] left-[55px] top-[14px] w-px" data-node-id="71:5532" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[14px] left-[51px] top-[10px] w-px" data-node-id="71:5531" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[7px] left-[47px] top-[13.5px] w-px" data-node-id="71:5530" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[15px] left-[43px] top-[9.5px] w-px" data-node-id="71:5529" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[8px] left-[39px] top-[13px] w-px" data-node-id="71:5528" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[16px] left-[35px] top-[9px] w-px" data-node-id="71:5527" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[9px] left-[31px] top-[12.5px] w-px" data-node-id="71:5526" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[17px] left-[27px] top-[8.5px] w-px" data-node-id="71:5525" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[10px] left-[23px] top-[12px] w-px" data-node-id="71:5524" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[3px] left-[19px] top-[15.5px] w-px" data-node-id="71:5523" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[11px] left-[15px] top-[11.5px] w-px" data-node-id="71:5522" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[4px] left-[11px] top-[15px] w-px" data-node-id="71:5521" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[12px] left-[7px] top-[11px] w-px" data-node-id="71:5520" data-name="Waveform sample" />
+      </motion.div>
+      <motion.div className="absolute bg-[rgba(123,129,150,0.15)] border border-[rgba(123,129,150,0.1)] border-solid h-[36px] left-[372px] overflow-clip rounded-[5px] top-[204px] w-[116px]" data-node-id="71:5493" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Clip 3">
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[12px] left-[103px] top-[11px] w-px" data-node-id="71:5518" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[5px] left-[99px] top-[14.5px] w-px" data-node-id="71:5517" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[13px] left-[95px] top-[10.5px] w-px" data-node-id="71:5516" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[6px] left-[91px] top-[14px] w-px" data-node-id="71:5515" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[14px] left-[87px] top-[10px] w-px" data-node-id="71:5514" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[7px] left-[83px] top-[13.5px] w-px" data-node-id="71:5513" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[15px] left-[79px] top-[9.5px] w-px" data-node-id="71:5512" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[8px] left-[75px] top-[13px] w-px" data-node-id="71:5511" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[16px] left-[71px] top-[9px] w-px" data-node-id="71:5510" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[9px] left-[67px] top-[12.5px] w-px" data-node-id="71:5509" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[17px] left-[63px] top-[8.5px] w-px" data-node-id="71:5508" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[10px] left-[59px] top-[12px] w-px" data-node-id="71:5507" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[3px] left-[55px] top-[15.5px] w-px" data-node-id="71:5506" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[11px] left-[51px] top-[11.5px] w-px" data-node-id="71:5505" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[4px] left-[47px] top-[15px] w-px" data-node-id="71:5504" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[12px] left-[43px] top-[11px] w-px" data-node-id="71:5503" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[5px] left-[39px] top-[14.5px] w-px" data-node-id="71:5502" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[13px] left-[35px] top-[10.5px] w-px" data-node-id="71:5501" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[6px] left-[31px] top-[14px] w-px" data-node-id="71:5500" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[14px] left-[27px] top-[10px] w-px" data-node-id="71:5499" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[7px] left-[23px] top-[13.5px] w-px" data-node-id="71:5498" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[15px] left-[19px] top-[9.5px] w-px" data-node-id="71:5497" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[8px] left-[15px] top-[13px] w-px" data-node-id="71:5496" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[16px] left-[11px] top-[9px] w-px" data-node-id="71:5495" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[9px] left-[7px] top-[12.5px] w-px" data-node-id="71:5494" data-name="Waveform sample" />
+      </motion.div>
+      <motion.div className="absolute bg-[rgba(123,129,150,0.15)] border border-[rgba(123,129,150,0.1)] border-solid h-[36px] left-[216px] overflow-clip rounded-[5px] top-[204px] w-[146px]" data-node-id="71:5460" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Clip 2">
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[13px] left-[131px] top-[10.5px] w-px" data-node-id="71:5492" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[6px] left-[127px] top-[14px] w-px" data-node-id="71:5491" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[14px] left-[123px] top-[10px] w-px" data-node-id="71:5490" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[7px] left-[119px] top-[13.5px] w-px" data-node-id="71:5489" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[15px] left-[115px] top-[9.5px] w-px" data-node-id="71:5488" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[8px] left-[111px] top-[13px] w-px" data-node-id="71:5487" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[16px] left-[107px] top-[9px] w-px" data-node-id="71:5486" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[9px] left-[103px] top-[12.5px] w-px" data-node-id="71:5485" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[17px] left-[99px] top-[8.5px] w-px" data-node-id="71:5484" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[10px] left-[95px] top-[12px] w-px" data-node-id="71:5483" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[3px] left-[91px] top-[15.5px] w-px" data-node-id="71:5482" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[11px] left-[87px] top-[11.5px] w-px" data-node-id="71:5481" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[4px] left-[83px] top-[15px] w-px" data-node-id="71:5480" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[12px] left-[79px] top-[11px] w-px" data-node-id="71:5479" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[5px] left-[75px] top-[14.5px] w-px" data-node-id="71:5478" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[13px] left-[71px] top-[10.5px] w-px" data-node-id="71:5477" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[6px] left-[67px] top-[14px] w-px" data-node-id="71:5476" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[14px] left-[63px] top-[10px] w-px" data-node-id="71:5475" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[7px] left-[59px] top-[13.5px] w-px" data-node-id="71:5474" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[15px] left-[55px] top-[9.5px] w-px" data-node-id="71:5473" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[8px] left-[51px] top-[13px] w-px" data-node-id="71:5472" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[16px] left-[47px] top-[9px] w-px" data-node-id="71:5471" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[9px] left-[43px] top-[12.5px] w-px" data-node-id="71:5470" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[17px] left-[39px] top-[8.5px] w-px" data-node-id="71:5469" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[10px] left-[35px] top-[12px] w-px" data-node-id="71:5468" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[3px] left-[31px] top-[15.5px] w-px" data-node-id="71:5467" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[11px] left-[27px] top-[11.5px] w-px" data-node-id="71:5466" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[4px] left-[23px] top-[15px] w-px" data-node-id="71:5465" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[12px] left-[19px] top-[11px] w-px" data-node-id="71:5464" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[5px] left-[15px] top-[14.5px] w-px" data-node-id="71:5463" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[13px] left-[11px] top-[10.5px] w-px" data-node-id="71:5462" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[6px] left-[7px] top-[14px] w-px" data-node-id="71:5461" data-name="Waveform sample" />
+      </motion.div>
+      <motion.div className="absolute bg-[rgba(123,129,150,0.15)] border border-[rgba(123,129,150,0.1)] border-solid h-[36px] left-[94px] overflow-clip rounded-[5px] top-[204px] w-[112px]" data-node-id="71:5435" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Clip 1">
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[14px] left-[99px] top-[10px] w-px" data-node-id="71:5459" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[7px] left-[95px] top-[13.5px] w-px" data-node-id="71:5458" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[15px] left-[91px] top-[9.5px] w-px" data-node-id="71:5457" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[8px] left-[87px] top-[13px] w-px" data-node-id="71:5456" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[16px] left-[83px] top-[9px] w-px" data-node-id="71:5455" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[9px] left-[79px] top-[12.5px] w-px" data-node-id="71:5454" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[17px] left-[75px] top-[8.5px] w-px" data-node-id="71:5453" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[10px] left-[71px] top-[12px] w-px" data-node-id="71:5452" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[3px] left-[67px] top-[15.5px] w-px" data-node-id="71:5451" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[11px] left-[63px] top-[11.5px] w-px" data-node-id="71:5450" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[4px] left-[59px] top-[15px] w-px" data-node-id="71:5449" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[12px] left-[55px] top-[11px] w-px" data-node-id="71:5448" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[5px] left-[51px] top-[14.5px] w-px" data-node-id="71:5447" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[13px] left-[47px] top-[10.5px] w-px" data-node-id="71:5446" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[6px] left-[43px] top-[14px] w-px" data-node-id="71:5445" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[14px] left-[39px] top-[10px] w-px" data-node-id="71:5444" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[7px] left-[35px] top-[13.5px] w-px" data-node-id="71:5443" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[15px] left-[31px] top-[9.5px] w-px" data-node-id="71:5442" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[8px] left-[27px] top-[13px] w-px" data-node-id="71:5441" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[16px] left-[23px] top-[9px] w-px" data-node-id="71:5440" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[9px] left-[19px] top-[12.5px] w-px" data-node-id="71:5439" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[17px] left-[15px] top-[8.5px] w-px" data-node-id="71:5438" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[10px] left-[11px] top-[12px] w-px" data-node-id="71:5437" data-name="Waveform sample" />
+        <div className="absolute bg-[rgba(123,129,150,0.31)] h-[3px] left-[7px] top-[15.5px] w-px" data-node-id="71:5436" data-name="Waveform sample" />
+      </motion.div>
+      <motion.div className="absolute h-[46px] left-[54px] overflow-clip top-[307px] w-[510px]" data-node-id="71:5432" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Track">
+        <p className="[word-break:break-word] absolute font-['JetBrains_Mono:Regular'] font-normal leading-[1.4] left-0 text-[#7b8196] text-[8px] top-[15px] w-[20px]" data-node-id="71:5434">
+          03
+        </p>
+        <div className="absolute bg-[rgba(17,19,26,0.5)] h-[46px] left-[22px] rounded-[5px] top-0 w-[488px]" data-node-id="71:5433" data-name="Track bed" />
+      </motion.div>
+      <motion.div className="absolute h-[46px] left-[54px] overflow-clip top-[253px] w-[510px]" data-node-id="71:5429" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Track">
+        <p className="[word-break:break-word] absolute font-['JetBrains_Mono:Regular'] font-normal leading-[1.4] left-0 text-[#7b8196] text-[8px] top-[15px] w-[20px]" data-node-id="71:5431">
+          02
+        </p>
+        <div className="absolute bg-[rgba(17,19,26,0.5)] h-[46px] left-[22px] rounded-[5px] top-0 w-[488px]" data-node-id="71:5430" data-name="Track bed" />
+      </motion.div>
+      <motion.div className="absolute h-[46px] left-[54px] overflow-clip top-[199px] w-[510px]" data-node-id="71:5426" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Track">
+        <p className="[word-break:break-word] absolute font-['JetBrains_Mono:Regular'] font-normal leading-[1.4] left-0 text-[#7b8196] text-[8px] top-[15px] w-[20px]" data-node-id="71:5428">
+          01
+        </p>
+        <div className="absolute bg-[rgba(17,19,26,0.5)] h-[46px] left-[22px] rounded-[5px] top-0 w-[488px]" data-node-id="71:5427" data-name="Track bed" />
+      </motion.div>
+      <p className="[word-break:break-word] absolute font-['JetBrains_Mono:Regular'] font-normal leading-[1.4] left-[564px] text-[#7b8196] text-[8px] top-[157px] w-[55px]" data-node-id="71:5425">
+        00:08
+      </p>
+      <p className="[word-break:break-word] absolute font-['JetBrains_Mono:Regular'] font-normal leading-[1.4] left-[442px] text-[#7b8196] text-[8px] top-[157px] w-[55px]" data-node-id="71:5424">
+        00:06
+      </p>
+      <p className="[word-break:break-word] absolute font-['JetBrains_Mono:Regular'] font-normal leading-[1.4] left-[320px] text-[#7b8196] text-[8px] top-[157px] w-[55px]" data-node-id="71:5423">
+        00:04
+      </p>
+      <p className="[word-break:break-word] absolute font-['JetBrains_Mono:Regular'] font-normal leading-[1.4] left-[198px] text-[#7b8196] text-[8px] top-[157px] w-[55px]" data-node-id="71:5422">
+        00:02
+      </p>
+      <p className="[word-break:break-word] absolute font-['JetBrains_Mono:Regular'] font-normal leading-[1.4] left-[76px] text-[#7b8196] text-[8px] top-[157px] w-[55px]" data-node-id="71:5421">
+        00:00
+      </p>
+      <motion.div className="absolute bg-[rgba(123,129,150,0.2)] h-[12px] left-[564px] top-[174px] w-px" data-node-id="71:5420" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Timecode tick" />
+      <motion.div className="absolute bg-[rgba(123,129,150,0.2)] h-[5px] left-[539.6px] top-[181px] w-px" data-node-id="71:5419" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Timecode tick" />
+      <motion.div className="absolute bg-[rgba(123,129,150,0.2)] h-[5px] left-[515.2px] top-[181px] w-px" data-node-id="71:5418" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Timecode tick" />
+      <motion.div className="absolute bg-[rgba(123,129,150,0.2)] h-[5px] left-[490.8px] top-[181px] w-px" data-node-id="71:5417" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Timecode tick" />
+      <motion.div className="absolute bg-[rgba(123,129,150,0.2)] h-[5px] left-[466.4px] top-[181px] w-px" data-node-id="71:5416" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Timecode tick" />
+      <motion.div className="absolute bg-[rgba(123,129,150,0.2)] h-[12px] left-[442px] top-[174px] w-px" data-node-id="71:5415" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Timecode tick" />
+      <motion.div className="absolute bg-[rgba(123,129,150,0.2)] h-[5px] left-[417.6px] top-[181px] w-px" data-node-id="71:5414" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Timecode tick" />
+      <motion.div className="absolute bg-[rgba(123,129,150,0.2)] h-[5px] left-[393.2px] top-[181px] w-px" data-node-id="71:5413" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Timecode tick" />
+      <motion.div className="absolute bg-[rgba(123,129,150,0.2)] h-[5px] left-[368.8px] top-[181px] w-px" data-node-id="71:5412" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Timecode tick" />
+      <motion.div className="absolute bg-[rgba(123,129,150,0.2)] h-[5px] left-[344.4px] top-[181px] w-px" data-node-id="71:5411" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Timecode tick" />
+      <motion.div className="absolute bg-[rgba(123,129,150,0.2)] h-[12px] left-[320px] top-[174px] w-px" data-node-id="71:5410" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Timecode tick" />
+      <motion.div className="absolute bg-[rgba(123,129,150,0.2)] h-[5px] left-[295.6px] top-[181px] w-px" data-node-id="71:5409" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Timecode tick" />
+      <motion.div className="absolute bg-[rgba(123,129,150,0.2)] h-[5px] left-[271.2px] top-[181px] w-px" data-node-id="71:5408" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Timecode tick" />
+      <motion.div className="absolute bg-[rgba(123,129,150,0.2)] h-[5px] left-[246.8px] top-[181px] w-px" data-node-id="71:5407" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Timecode tick" />
+      <motion.div className="absolute bg-[rgba(123,129,150,0.2)] h-[5px] left-[222.4px] top-[181px] w-px" data-node-id="71:5406" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Timecode tick" />
+      <motion.div className="absolute bg-[rgba(123,129,150,0.2)] h-[12px] left-[198px] top-[174px] w-px" data-node-id="71:5405" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Timecode tick" />
+      <motion.div className="absolute bg-[rgba(123,129,150,0.2)] h-[5px] left-[173.6px] top-[181px] w-px" data-node-id="71:5404" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Timecode tick" />
+      <motion.div className="absolute bg-[rgba(123,129,150,0.2)] h-[5px] left-[149.2px] top-[181px] w-px" data-node-id="71:5403" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Timecode tick" />
+      <motion.div className="absolute bg-[rgba(123,129,150,0.2)] h-[5px] left-[124.8px] top-[181px] w-px" data-node-id="71:5402" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Timecode tick" />
+      <motion.div className="absolute bg-[rgba(123,129,150,0.2)] h-[5px] left-[100.4px] top-[181px] w-px" data-node-id="71:5401" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Timecode tick" />
+      <motion.div className="absolute bg-[rgba(123,129,150,0.2)] h-[12px] left-[76px] top-[174px] w-px" data-node-id="71:5400" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Timecode tick" />
+      <motion.div className="absolute bg-[rgba(123,129,150,0.2)] h-px left-[76px] top-[186px] w-[488px]" data-node-id="71:5399" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Ruler baseline" />
+      <p className="[word-break:break-word] absolute font-['JetBrains_Mono:Regular'] font-normal leading-[1.4] left-[444px] text-[#7b8196] text-[10px] top-[125px] w-[120px]" data-node-id="71:5398">
+        00:00:04:12
+      </p>
+      <p className="[word-break:break-word] absolute font-['JetBrains_Mono:Regular'] font-normal leading-[1.4] left-[76px] text-[#7b8196] text-[9px] top-[125px] w-[200px]" data-node-id="71:5397">
+        SEQUENCE / 01
+      </p>
+    </motion.div>
+  );
+}

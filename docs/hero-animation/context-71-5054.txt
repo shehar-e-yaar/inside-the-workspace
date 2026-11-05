@@ -1,0 +1,19 @@
+const assetPathPrefix = "https://www.figma.com/api/mcp/asset/fb739b44-3b6a-4177-9845-66c75e911431";
+import { motion } from "motion/react";
+const imgDots = `${assetPathPrefix}/59323.svg`;
+const imgGridLines = `${assetPathPrefix}/b6dec.svg`;
+
+export default function GridState() {
+  return (
+    <motion.div className="opacity-0 relative size-full" data-node-id="71:5054" style={{ "--motion-design-transform": "initial", "--motion-design-transform-inverse": "initial", "--motion-layout-transform": "translate(0px)" } as React.CSSProperties} data-name="Grid state">
+      <div className="absolute h-[520px] left-0 overflow-clip top-0 w-[640px]" data-node-id="71:5055" data-name="Dot field">
+        <div className="absolute h-[520px] left-0 top-0 w-[640px]" data-node-id="71:5275" data-name="Dots">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDots} />
+        </div>
+        <div className="absolute h-[520px] left-0 top-0 w-[640px]" data-node-id="71:5056" data-name="Grid lines">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgGridLines} />
+        </div>
+      </div>
+    </motion.div>
+  );
+}
